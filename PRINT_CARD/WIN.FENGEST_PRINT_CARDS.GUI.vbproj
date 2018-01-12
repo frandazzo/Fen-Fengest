@@ -1,0 +1,389 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{77D4C4E6-E205-4D6A-BB9E-A921F8ED6541}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Sub Main</StartupObject>
+    <RootNamespace>StampaTessereSindacati</RootNamespace>
+    <AssemblyName>WIN.FENGEST_PRINT_CARDS.GUI</AssemblyName>
+    <MyType>WindowsFormsWithCustomSubMain</MyType>
+    <ApplicationIcon>inetcpl.cpl %287%29.ico</ApplicationIcon>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Charts.v13.2.Core, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v13.2.Core, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.PivotGrid.v13.2.Core, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Office.v13.2.Core, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.RichEdit.v13.2.Core, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraBars.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraCharts.v13.2.Wizard, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPivotGrid.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v13.2.Extensions, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Sparkline.v13.2.Core, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v13.2.UI, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraRichEdit.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraTreeList.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="System" />
+    <Reference Include="System.Data, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\WINDOWS\assembly\GAC_32\System.Data\2.0.0.0__b77a5c561934e089\System.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.Services, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\WINDOWS\assembly\GAC_MSIL\System.Web.Services\2.0.0.0__b03f5f7f11d50a3a\System.Web.Services.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\WINDOWS\assembly\GAC_MSIL\System.Xml\2.0.0.0__b77a5c561934e089\System.Xml.dll</HintPath>
+    </Reference>
+    <Reference Include="WIN.TECHNICAL.GUI.COMMONS, Version=8.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\dlls\WIN.TECHNICAL.GUI.COMMONS.dll</HintPath>
+    </Reference>
+    <Reference Include="WIN.TECHNICAL.SECURITY, Version=8.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\dlls\WIN.TECHNICAL.SECURITY.dll</HintPath>
+    </Reference>
+    <Reference Include="WIN.TECHNICAL.VB.GUI.UTILITY, Version=8.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\dlls\WIN.TECHNICAL.VB.GUI.UTILITY.dll</HintPath>
+    </Reference>
+    <Reference Include="WIN.TECHNICAL.VB.PERSISTENCE, Version=8.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\dlls\WIN.TECHNICAL.VB.PERSISTENCE.dll</HintPath>
+    </Reference>
+    <Reference Include="WIN.TECHNICAL.VB.UTILS, Version=8.6.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\dlls\WIN.TECHNICAL.VB.UTILS.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="PRINT_CARD_CORE_VB" />
+    <Import Include="StampaTessereSindacati" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="WIN.GUI" />
+    <Import Include="WIN.GUI.APPLICATION" />
+    <Import Include="WIN.GUI.APPLICATION.PRESENTATION" />
+    <Import Include="WIN.TECHNICAL" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Applicazione.vb" />
+    <Compile Include="FormAnteprima.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAnteprima.Designer.vb">
+      <DependentUpon>FormAnteprima.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormConfigurazione.Designer.vb">
+      <DependentUpon>FormConfigurazione.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormConfigurazione.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSelezione.Designer.vb">
+      <DependentUpon>FormSelezione.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormSelezione.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCambiaAziende.Designer.vb">
+      <DependentUpon>FrmCambiaAziende.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCambiaAziende.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmFilter.Designer.vb">
+      <DependentUpon>FrmFilter.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmFilter.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmListaLavoro.Designer.vb">
+      <DependentUpon>FrmListaLavoro.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmListaLavoro.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSelectPrinter.Designer.vb">
+      <DependentUpon>FrmSelectPrinter.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSelectPrinter.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gestore.vb" />
+    <Compile Include="ListaTesserati.vb" />
+    <Compile Include="Module1.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="ReportSettings.vb" />
+    <Compile Include="TernaTesserati.vb" />
+    <Compile Include="TesseramentoDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TesseramentoDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TesseramentoDataSet.vb">
+      <DependentUpon>TesseramentoDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Tesserato1.vb" />
+    <Compile Include="XtraReport1.Designer.vb">
+      <DependentUpon>XtraReport1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="XtraReport1.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="XtraReport2.Designer.vb">
+      <DependentUpon>XtraReport2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="XtraReport2.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="XtraReport3.Designer.vb">
+      <DependentUpon>XtraReport3.vb</DependentUpon>
+    </Compile>
+    <Compile Include="XtraReport3.vb">
+      <SubType>Component</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="FormAnteprima.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormAnteprima.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormConfigurazione.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormConfigurazione.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSelezione.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormSelezione.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCambiaAziende.resx">
+      <DependentUpon>FrmCambiaAziende.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmFilter.resx">
+      <DependentUpon>FrmFilter.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmListaLavoro.resx">
+      <DependentUpon>FrmListaLavoro.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSelectPrinter.resx">
+      <DependentUpon>FrmSelectPrinter.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\licenses.licx" />
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XtraReport1.resx">
+      <DependentUpon>XtraReport1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XtraReport3.resx">
+      <DependentUpon>XtraReport3.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\DataSources\TernaTesserati.datasource" />
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="TesseramentoDataSet.xsc">
+      <DependentUpon>TesseramentoDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="TesseramentoDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TesseramentoDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TesseramentoDataSet.xss">
+      <DependentUpon>TesseramentoDataSet.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{967B4E0D-AD0C-4609-AB67-0FA40C0206D8}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="configurazionedefinitivotessere.bmp">
+    </Content>
+    <Content Include="Icon1.ico" />
+    <Content Include="Icon2.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="inetcpl.cpl %287%29.ico" />
+    <None Include="My Project\DataSources\Tesserato.datasource" />
+    <None Include="My Project\DataSources\Tesserato1.datasource" />
+    <None Include="Resources\Waiting3.png" />
+    <None Include="My Project\app.manifest" />
+    <None Include="Resources\hxds.dll %283%29.ico" />
+    <None Include="Resources\msenv.dll %2816%29.ico" />
+    <None Include="Resources\Fantasy1.ico" />
+    <None Include="Resources\Fantasy.ico" />
+    <None Include="Resources\Stampa.ico" />
+    <None Include="Resources\Ripristina.ico" />
+    <None Include="Resources\wpdshext.dll %2829%29.ico" />
+    <None Include="Resources\hxds.dll %286%29.ico" />
+    <None Include="Resources\outicon.exe %2833%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="BusinessObjects.CrystalReports.NET.2.0">
+      <Visible>False</Visible>
+      <ProductName>Crystal Reports per .NET Framework 2.0</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\WIN.FENGEST.GUI\WIN.FENGEST.GUI.vbproj">
+      <Project>{6668dffd-428c-4f6e-afff-8a7a2c7c95ad}</Project>
+      <Name>WIN.FENGEST.GUI</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WIN.FENGEST.HANDLERS\WIN.FENGEST.HANDLERS.vbproj">
+      <Project>{677821df-57ed-4409-b2a6-384dad0679b7}</Project>
+      <Name>WIN.FENGEST.HANDLERS</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WIN.FENGEST_ARTIFACTS.DOMAIN\WIN.FENGEST_ARTIFACTS.DOMAIN.vbproj">
+      <Project>{4cda0a25-48a3-4b0d-b71f-2eb0a82bfd15}</Project>
+      <Name>WIN.FENGEST_ARTIFACTS.DOMAIN</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PRINT_CARD_CORE_VB\PRINT_CARD_CORE_VB.vbproj">
+      <Project>{f24aa710-90ab-4470-b4e9-6ef67f75c61a}</Project>
+      <Name>PRINT_CARD_CORE_VB</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Label2.Text" xml:space="preserve">
+    <value>Selezionare la lista di lavoro contenente tutti gli utenti per cui si vuole stampare un modello per le comunicazioni. Selezionare un tipo comunicazine ed una causale di comunicazione, quindi selezionare il modello word precompilato per cui si desidera che eseguire una stampa. Al termine di questa procedura selezionare il tasto di avvio della procedura di stampa che provvederà a geneare i documenti word per ogni utente in lista e a registrare tali documenti nelle comunicazioni utente</value>
+  </data>
+  <metadata name="HelpProvider1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>136, 17</value>
+  </metadata>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="cmdTags.BackImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        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
+        gg==
+</value>
+  </data>
+  <metadata name="PrintDialog1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+</root>

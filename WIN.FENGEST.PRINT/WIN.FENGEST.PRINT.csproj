@@ -1,0 +1,1191 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{BFCA50A8-F062-4564-AC08-6C2AF0B5A145}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WIN.GUI.PRINT</RootNamespace>
+    <AssemblyName>WIN.FENGEST.PRINT</AssemblyName>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <PublishUrl>http://localhost/WIN.GUI.PRINT/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ItemGroup>
+    <Compile Include="DSReport.cs">
+      <DependentUpon>DSReport.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DSReport.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>DSReport.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FrmOpzioniStampaAnagraficaUtente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmOpzioniStampaAnagraficaUtente.Designer.cs">
+      <DependentUpon>FrmOpzioniStampaAnagraficaUtente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmOpzioniStampaAnagraficaAzienda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmOpzioniStampaAnagraficaAzienda.Designer.cs">
+      <DependentUpon>FrmOpzioniStampaAnagraficaAzienda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmOpzioniStampaPrestazioni.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmOpzioniStampaPrestazioni.Designer.cs">
+      <DependentUpon>FrmOpzioniStampaPrestazioni.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmOpzioniStampaVertenza.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmOpzioniStampaVertenza.Designer.cs">
+      <DependentUpon>FrmOpzioniStampaVertenza.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmReportAnagraficaAziendaView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmReportAnagraficaAziendaView.Designer.cs">
+      <DependentUpon>FrmReportAnagraficaAziendaView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmReportAnagraficaDelegaAccettataView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmReportAnagraficaDelegaAccettataView.Designer.cs">
+      <DependentUpon>FrmReportAnagraficaDelegaAccettataView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmReportAnagraficaDelegaAnnullataView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmReportAnagraficaDelegaAnnullataView.Designer.cs">
+      <DependentUpon>FrmReportAnagraficaDelegaAnnullataView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmReportAnagraficaDelegaAttivataView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmReportAnagraficaDelegaAttivataView.Designer.cs">
+      <DependentUpon>FrmReportAnagraficaDelegaAttivataView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmReportAnagraficaDelegaInoltrataView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmReportAnagraficaDelegaInoltrataView.Designer.cs">
+      <DependentUpon>FrmReportAnagraficaDelegaInoltrataView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmReportAnagraficaDelegaRevocataView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmReportAnagraficaDelegaRevocataView.Designer.cs">
+      <DependentUpon>FrmReportAnagraficaDelegaRevocataView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmReportAnagraficaEntiView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmReportAnagraficaEntiView.Designer.cs">
+      <DependentUpon>FrmReportAnagraficaEntiView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmReportAnagraficaReferenteView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmReportAnagraficaReferenteView.Designer.cs">
+      <DependentUpon>FrmReportAnagraficaReferenteView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmReportAnalisiDomandeLavoroView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmReportAnalisiDomandeLavoroView.Designer.cs">
+      <DependentUpon>FrmReportAnalisiDomandeLavoroView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmReportAnalisiOfferteLavoroView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmReportAnalisiOfferteLavoroView.Designer.cs">
+      <DependentUpon>FrmReportAnalisiOfferteLavoroView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmReportCausaliComunicazioneView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmReportCausaliComunicazioneView.Designer.cs">
+      <DependentUpon>FrmReportCausaliComunicazioneView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmReportComunicazioneView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmReportComunicazioneView.Designer.cs">
+      <DependentUpon>FrmReportComunicazioneView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmReportDelegheDTO.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmReportDelegheDTO.Designer.cs">
+      <DependentUpon>FrmReportDelegheDTO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmReportElencoPrestazioniView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmReportElencoPrestazioniView.Designer.cs">
+      <DependentUpon>FrmReportElencoPrestazioniView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmReportIncassiQuoteView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmReportIncassiQuoteView.Designer.cs">
+      <DependentUpon>FrmReportIncassiQuoteView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmReportIscrittiDTO.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmReportIscrittiDTO.Designer.cs">
+      <DependentUpon>FrmReportIscrittiDTO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmReportIscrittiView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmReportIscrittiView.Designer.cs">
+      <DependentUpon>FrmReportIscrittiView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmReportLavoratoriLiberiView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmReportLavoratoriLiberiView.Designer.cs">
+      <DependentUpon>FrmReportLavoratoriLiberiView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmReportListaCausaliRevocaDelegaView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmReportListaCausaliRevocaDelegaView.Designer.cs">
+      <DependentUpon>FrmReportListaCausaliRevocaDelegaView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmReportListaCausaliSottoscrizioneView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmReportListaCausaliSottoscrizioneView.Designer.cs">
+      <DependentUpon>FrmReportListaCausaliSottoscrizioneView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmReportListaComunicazioniView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmReportListaComunicazioniView.Designer.cs">
+      <DependentUpon>FrmReportListaComunicazioniView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmReportListaLavoroView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmReportListaLavoroView.Designer.cs">
+      <DependentUpon>FrmReportListaLavoroView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmReportListaOfferteLavoroView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmReportListaOfferteLavoroView.Designer.cs">
+      <DependentUpon>FrmReportListaOfferteLavoroView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmReportListaTipiContrattoView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmReportListaTipiContrattoView.Designer.cs">
+      <DependentUpon>FrmReportListaTipiContrattoView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmReportListaDelegheUtenteView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmReportListaDelegheUtenteView.Designer.cs">
+      <DependentUpon>FrmReportListaDelegheUtenteView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmReportListaIstitutiContrattualiView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmReportListaIstitutiContrattualiView.Designer.cs">
+      <DependentUpon>FrmReportListaIstitutiContrattualiView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmReportListaLivelliAbilitaView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmReportListaLivelliAbilitaView.Designer.cs">
+      <DependentUpon>FrmReportListaLivelliAbilitaView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmReportListaRepartiView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmReportListaRepartiView.Designer.cs">
+      <DependentUpon>FrmReportListaRepartiView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmReportListaAbilitaView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmReportListaAbilitaView.Designer.cs">
+      <DependentUpon>FrmReportListaAbilitaView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmReportListaTipiPrestazioniView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmReportListaTipiPrestazioniView.Designer.cs">
+      <DependentUpon>FrmReportListaTipiPrestazioniView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmReportListaVertenzeView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmReportListaVertenzeView.Designer.cs">
+      <DependentUpon>FrmReportListaVertenzeView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmReportNonIscrittiDTO.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmReportNonIscrittiDTO.Designer.cs">
+      <DependentUpon>FrmReportNonIscrittiDTO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmReportOfferta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmReportOfferta.Designer.cs">
+      <DependentUpon>FrmReportOfferta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmReportOfferteLavoroView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmReportOfferteLavoroView.Designer.cs">
+      <DependentUpon>FrmReportOfferteLavoroView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmReportPrestazioneView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmReportPrestazioneView.Designer.cs">
+      <DependentUpon>FrmReportPrestazioneView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmReportPrestazioniDTO.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmReportPrestazioniDTO.Designer.cs">
+      <DependentUpon>FrmReportPrestazioniDTO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmReportProposteLavoroView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmReportProposteLavoroView.Designer.cs">
+      <DependentUpon>FrmReportProposteLavoroView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmReportTipiComunicazioneView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmReportTipiComunicazioneView.Designer.cs">
+      <DependentUpon>FrmReportTipiComunicazioneView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmReportVertenzaView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmReportVertenzaView.Designer.cs">
+      <DependentUpon>FrmReportVertenzaView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmReportVertenzeDTO.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmReportVertenzeDTO.Designer.cs">
+      <DependentUpon>FrmReportVertenzeDTO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PrintFacade.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReportGenerator\GeneratorAnagraficaEnti.cs" />
+    <Compile Include="ReportGenerator\GeneratorAnalisiDomandeLavoro.cs" />
+    <Compile Include="ReportGenerator\GeneratorAnalisiOfferteLavoro.cs" />
+    <Compile Include="ReportGenerator\GeneratorCausaliComunicazione.cs" />
+    <Compile Include="ReportGenerator\GeneratorCausaliRevoca.cs" />
+    <Compile Include="ReportGenerator\GeneratorComunicazioni.cs" />
+    <Compile Include="ReportGenerator\GeneratorDelegheDTO.cs" />
+    <Compile Include="ReportGenerator\GeneratorDocumentoIncassi.cs" />
+    <Compile Include="ReportGenerator\GeneratorListeLavoro.cs" />
+    <Compile Include="ReportGenerator\GeneratorOfferta.cs" />
+    <Compile Include="ReportGenerator\GeneratorOfferteLavoro.cs" />
+    <Compile Include="ReportGenerator\GeneratorPrestazioniDTO.cs" />
+    <Compile Include="ReportGenerator\GeneratorProposteLavoro.cs" />
+    <Compile Include="ReportGenerator\GeneratorReportIncassiQuote.cs" />
+    <Compile Include="ReportGenerator\GeneratorReportIscritti.cs" />
+    <Compile Include="ReportGenerator\GeneratorReportLavoratoriLiberi.cs" />
+    <Compile Include="ReportGenerator\GeneratorTipiComunicazione.cs" />
+    <Compile Include="ReportGenerator\GeneratorTipiContratto.cs" />
+    <Compile Include="ReportGenerator\GeneratorCusaliSottoscrizione.cs" />
+    <Compile Include="ReportGenerator\GeneratorDeleghe.cs" />
+    <Compile Include="ReportGenerator\GeneratorIstitutiContrattuali.cs" />
+    <Compile Include="ReportGenerator\GeneratorLivelliAbilita.cs" />
+    <Compile Include="ReportGenerator\GeneratorPrestazioni.cs" />
+    <Compile Include="ReportGenerator\GeneratorReparti.cs" />
+    <Compile Include="ReportGenerator\GeneratorAbilita.cs" />
+    <Compile Include="ReportGenerator\GeneratorTipiPrestazioni.cs" />
+    <Compile Include="ReportGenerator\GeneratorVertenze.cs" />
+    <Compile Include="ReportGenerator\GeneratorVertenzeDTO.cs" />
+    <Compile Include="ReportGenerator\IDSGenerator.cs" />
+    <Compile Include="ReportGenerator\GeneratorAnagraficaAzienda.cs" />
+    <Compile Include="ReportGenerator\GeneratorAnagraficaDelega.cs" />
+    <Compile Include="ReportGenerator\GeneratorAnagraficaReferente.cs" />
+    <Compile Include="ReportGenerator\GeneratorAnagraficaUtente.cs" />
+    <Compile Include="FrmReportAnagraficaUtenteView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmReportAnagraficaUtenteView.Designer.cs">
+      <DependentUpon>FrmReportAnagraficaUtenteView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportGenerator\ReportInfo.cs" />
+    <Compile Include="FrmReportListaProposteLavoroView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmReportListaProposteLavoroView.Designer.cs">
+      <DependentUpon>FrmReportListaProposteLavoroView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\ReportAnagraficaDelegaAccettata.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportAnagraficaDelegaAccettata.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\ReportAnagraficaDelegaAnnullata.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportAnagraficaDelegaAnnullata.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\ReportAnagraficaDelegaAttivata.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportAnagraficaDelegaAttivata.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\ReportAnagraficaDelegaInoltrata.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportAnagraficaDelegaInoltrata.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\ReportAnagraficaDelegaRevocata.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportAnagraficaDelegaRevocata.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\ReportAnagraficaEnti.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportAnagraficaEnti.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\ReportAttitudiniUtente.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportAttitudiniUtente.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\ReportCausaliComunicazione.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportCausaliComunicazione.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\ReportComunicazione.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportComunicazione.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\ReportDelegheDTO.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportDelegheDTO.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\ReportDocumentiIncassi.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportDocumentiIncassi.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\ReportIscrittiDTO.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportIscrittiDTO.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\ReportLavoratoriLiberi.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportLavoratoriLiberi.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\ReportListaComunicazioni.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportListaComunicazioni.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\ReportListaLavoro.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportListaLavoro.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\ReportNonIscrittiDTO.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportNonIscrittiDTO.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\ReportOfferta.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportOfferta.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\ReportOfferteLavoro.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportOfferteLavoro.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\ReportPrestaziniDTO.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportPrestaziniDTO.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\ReportProposteLavoro.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportProposteLavoro.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\ReportListaOfferteLavoro.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportListaOfferteLavoro.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\ReportListaProposteLavoro.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportListaProposteLavoro.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\ReportElencoPrestazioni.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportElencoPrestazioni.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\ReportEventiVertenza.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportEventiVertenza.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\ReportIncassiQuote.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportIncassiQuote.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\ReportIscritti.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportIscritti.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\ReportIstitutiContrattualiVertenza.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportIstitutiContrattualiVertenza.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\ReportListaAnagraficaContratti.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportListaAnagraficaContratti.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\ReportAnalisiOfferteLavoro.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportAnalisiOfferteLavoro.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\ReportAnalisiDomandeLavoro.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportAnalisiDomandeLavoro.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\ReportListaCausaliRevocaDelega.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportListaCausaliRevocaDelega.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\ReportListaCausaliSottoscrizione.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportListaCausaliSottoscrizione.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\ReportListaTipiContratto.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportListaTipiContratto.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\ReportListaDelegheUtente.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportListaDelegheUtente.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\ReportListaIstitutiContrattuali.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportListaIstitutiContrattuali.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\ReportListaLivelliAbilita.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportListaLivelliAbilita.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\ReportListaReparti.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportListaReparti.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\ReportListaSediOperative.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportListaSediOperative.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\ReportListaAbilita.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportListaAbilita.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\ReportListaTipiPrestazioni.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportListaTipiPrestazioni.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\ReportListaVertenze.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportListaVertenze.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\ReportPreferenzeUtente.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportPreferenzeUtente.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\ReportAnagraficaAzienda.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportAnagraficaAzienda.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\ReportAnagraficaDeleghe.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportAnagraficaDeleghe.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\ReportAnagraficaReferente.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportAnagraficaReferente.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\ReportAnagraficaUtente.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportAnagraficaUtente.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportSettings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>ReportSettings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Report\ReportPrestazione.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportPrestazione.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\ReportTipiComunicazione.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportTipiComunicazione.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\ReportVertenza.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportVertenza.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\ReportVertenzeDTO.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportVertenzeDTO.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SettingsManager.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Enterprise.Framework, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Enterprise.InfoStore, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\WINDOWS\assembly\GAC_MSIL\System.Web.Services\2.0.0.0__b03f5f7f11d50a3a\System.Web.Services.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WIN.TECHNICAL.VB.UTILS">
+      <HintPath>..\dlls\WIN.TECHNICAL.VB.UTILS.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="FrmOpzioniStampaAnagraficaUtente.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmOpzioniStampaAnagraficaUtente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\ReportAnagraficaUtente.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReportAnagraficaUtente.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{967B4E0D-AD0C-4609-AB67-0FA40C0206D8}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="DSReport.xsc">
+      <DependentUpon>DSReport.xsd</DependentUpon>
+    </None>
+    <EmbeddedResource Include="DSReport.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSReport.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmOpzioniStampaAnagraficaAzienda.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmOpzioniStampaAnagraficaAzienda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmOpzioniStampaPrestazioni.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmOpzioniStampaPrestazioni.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmOpzioniStampaVertenza.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmOpzioniStampaVertenza.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmReportAnagraficaAziendaView.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmReportAnagraficaAziendaView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmReportAnagraficaDelegaAccettataView.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmReportAnagraficaDelegaAccettataView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmReportAnagraficaDelegaAnnullataView.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmReportAnagraficaDelegaAnnullataView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmReportAnagraficaDelegaAttivataView.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmReportAnagraficaDelegaAttivataView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmReportAnagraficaDelegaInoltrataView.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmReportAnagraficaDelegaInoltrataView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmReportAnagraficaDelegaRevocataView.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmReportAnagraficaDelegaRevocataView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmReportAnagraficaEntiView.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmReportAnagraficaEntiView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmReportAnagraficaReferenteView.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmReportAnagraficaReferenteView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmReportAnagraficaUtenteView.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmReportAnagraficaUtenteView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmReportAnalisiDomandeLavoroView.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmReportAnalisiDomandeLavoroView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmReportAnalisiOfferteLavoroView.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmReportAnalisiOfferteLavoroView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmReportCausaliComunicazioneView.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmReportCausaliComunicazioneView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmReportComunicazioneView.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmReportComunicazioneView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmReportDelegheDTO.resx">
+      <DependentUpon>FrmReportDelegheDTO.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmReportElencoPrestazioniView.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmReportElencoPrestazioniView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmReportIncassiQuoteView.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmReportIncassiQuoteView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmReportIscrittiDTO.resx">
+      <DependentUpon>FrmReportIscrittiDTO.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmReportIscrittiView.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmReportIscrittiView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmReportLavoratoriLiberiView.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmReportLavoratoriLiberiView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmReportListaCausaliRevocaDelegaView.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmReportListaCausaliRevocaDelegaView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmReportListaCausaliSottoscrizioneView.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmReportListaCausaliSottoscrizioneView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmReportListaComunicazioniView.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmReportListaComunicazioniView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmReportListaLavoroView.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmReportListaLavoroView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmReportListaOfferteLavoroView.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmReportListaOfferteLavoroView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmReportListaProposteLavoroView.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmReportListaProposteLavoroView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmReportListaTipiContrattoView.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmReportListaTipiContrattoView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmReportListaDelegheUtenteView.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmReportListaDelegheUtenteView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmReportListaIstitutiContrattualiView.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmReportListaIstitutiContrattualiView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmReportListaLivelliAbilitaView.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmReportListaLivelliAbilitaView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmReportListaRepartiView.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmReportListaRepartiView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmReportListaAbilitaView.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmReportListaAbilitaView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmReportListaTipiPrestazioniView.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmReportListaTipiPrestazioniView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmReportListaVertenzeView.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmReportListaVertenzeView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmReportNonIscrittiDTO.resx">
+      <DependentUpon>FrmReportNonIscrittiDTO.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmReportOfferta.resx">
+      <DependentUpon>FrmReportOfferta.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmReportOfferteLavoroView.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmReportOfferteLavoroView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmReportPrestazioneView.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmReportPrestazioneView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmReportPrestazioniDTO.resx">
+      <DependentUpon>FrmReportPrestazioniDTO.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmReportProposteLavoroView.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmReportProposteLavoroView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmReportTipiComunicazioneView.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmReportTipiComunicazioneView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmReportVertenzaView.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmReportVertenzaView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmReportVertenzeDTO.resx">
+      <DependentUpon>FrmReportVertenzeDTO.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\ReportAnagraficaDelegaAccettata.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReportAnagraficaDelegaAccettata.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\ReportAnagraficaDelegaAnnullata.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReportAnagraficaDelegaAnnullata.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\ReportAnagraficaDelegaAttivata.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReportAnagraficaDelegaAttivata.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\ReportAnagraficaDelegaInoltrata.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReportAnagraficaDelegaInoltrata.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\ReportAnagraficaDelegaRevocata.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReportAnagraficaDelegaRevocata.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\ReportAnagraficaEnti.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReportAnagraficaEnti.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\ReportAttitudiniUtente.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReportAttitudiniUtente.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\ReportCausaliComunicazione.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReportCausaliComunicazione.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\ReportComunicazione.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReportComunicazione.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\ReportDelegheDTO.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReportDelegheDTO.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\ReportDocumentiIncassi.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReportDocumentiIncassi.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\ReportIscrittiDTO.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReportIscrittiDTO.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\ReportLavoratoriLiberi.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReportLavoratoriLiberi.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\ReportListaComunicazioni.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReportListaComunicazioni.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\ReportListaLavoro.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReportListaLavoro.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\ReportNonIscrittiDTO.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReportNonIscrittiDTO.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\ReportOfferta.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReportOfferta.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\ReportOfferteLavoro.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReportOfferteLavoro.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\ReportPrestaziniDTO.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReportPrestaziniDTO.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\ReportProposteLavoro.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReportProposteLavoro.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\ReportListaOfferteLavoro.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReportListaOfferteLavoro.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\ReportListaProposteLavoro.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReportListaProposteLavoro.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\ReportElencoPrestazioni.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReportElencoPrestazioni.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\ReportEventiVertenza.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReportEventiVertenza.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\ReportIncassiQuote.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReportIncassiQuote.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\ReportIscritti.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReportIscritti.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\ReportIstitutiContrattualiVertenza.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReportIstitutiContrattualiVertenza.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\ReportListaAnagraficaContratti.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReportListaAnagraficaContratti.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\ReportAnalisiOfferteLavoro.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReportAnalisiOfferteLavoro.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\ReportAnalisiDomandeLavoro.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReportAnalisiDomandeLavoro.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\ReportListaCausaliRevocaDelega.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReportListaCausaliRevocaDelega.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\ReportListaCausaliSottoscrizione.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReportListaCausaliSottoscrizione.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\ReportListaTipiContratto.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReportListaTipiContratto.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\ReportListaDelegheUtente.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReportListaDelegheUtente.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\ReportListaIstitutiContrattuali.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReportListaIstitutiContrattuali.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\ReportListaLivelliAbilita.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReportListaLivelliAbilita.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\ReportListaReparti.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReportListaReparti.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\ReportListaSediOperative.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReportListaSediOperative.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\ReportListaAbilita.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReportListaAbilita.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\ReportListaTipiPrestazioni.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReportListaTipiPrestazioni.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\ReportListaVertenze.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReportListaVertenze.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\ReportPreferenzeUtente.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReportPreferenzeUtente.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\ReportAnagraficaAzienda.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReportAnagraficaAzienda.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\ReportAnagraficaDeleghe.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReportAnagraficaDeleghe.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\ReportAnagraficaReferente.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReportAnagraficaReferente.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\ReportPrestazione.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReportPrestazione.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\ReportTipiComunicazione.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReportTipiComunicazione.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\ReportVertenza.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReportVertenza.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\ReportVertenzeDTO.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReportVertenzeDTO.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="DSReport.xss">
+      <DependentUpon>DSReport.xsd</DependentUpon>
+    </None>
+    <None Include="DSReport.xsx">
+      <DependentUpon>DSReport.xsd</DependentUpon>
+    </None>
+    <None Include="ReportSettings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>ReportSettings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\WIN.FENGEST.HANDLERS\WIN.FENGEST.HANDLERS.vbproj">
+      <Project>{677821DF-57ED-4409-B2A6-384DAD0679B7}</Project>
+      <Name>WIN.FENGEST.HANDLERS</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WIN.FENGEST.PERSISTENCE\WIN.FENGEST.PERSISTENCE.vbproj">
+      <Project>{F6B84311-43CC-4EB9-9433-A0B043A20403}</Project>
+      <Name>WIN.FENGEST.PERSISTENCE</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WIN.FENGEST_ARTIFACTS.DOMAIN\WIN.FENGEST_ARTIFACTS.DOMAIN.vbproj">
+      <Project>{4CDA0A25-48A3-4B0D-B71F-2EB0A82BFD15}</Project>
+      <Name>WIN.FENGEST_ARTIFACTS.DOMAIN</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WIN.FENGEST_FINANCIAL.DOMAIN\WIN.FENGEST_FINANCIAL.DOMAIN.vbproj">
+      <Project>{56A5A4A1-5E8E-4339-8400-2F4A23D62876}</Project>
+      <Name>WIN.FENGEST_FINANCIAL.DOMAIN</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WIN.FENGEST_INTERFACES.DOMAIN\WIN.FENGEST_INTERFACES.DOMAIN.vbproj">
+      <Project>{CBF388A0-2AD1-4D7C-8F12-3D3A4FF40BF6}</Project>
+      <Name>WIN.FENGEST_INTERFACES.DOMAIN</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WIN.FENGEST_SERVICES.DOMAIN\WIN.FENGEST_SERVICES.DOMAIN.vbproj">
+      <Project>{15FC8C5D-7817-457E-8F1F-E3958C95C070}</Project>
+      <Name>WIN.FENGEST_SERVICES.DOMAIN</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Image\" />
+  </ItemGroup>
+</Project>

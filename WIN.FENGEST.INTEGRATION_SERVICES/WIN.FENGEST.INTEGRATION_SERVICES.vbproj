@@ -1,0 +1,235 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6A94EFF1-AC97-44E0-8EC8-3697126DFAE0}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>WIN.APPLICATION.IMPORT_EXPORT_SERVICES</RootNamespace>
+    <AssemblyName>WIN.FENGEST.INTEGRATION_SERVICES</AssemblyName>
+    <MyType>Windows</MyType>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <PublishUrl>http://localhost/WIN.FENGEST.INTEGRATION_SERVICES/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WIN.TECHNICAL.SECURITY">
+      <HintPath>..\dlls\WIN.TECHNICAL.SECURITY.dll</HintPath>
+    </Reference>
+    <Reference Include="WIN.TECHNICAL.VB.PERSISTENCE">
+      <HintPath>..\dlls\WIN.TECHNICAL.VB.PERSISTENCE.dll</HintPath>
+    </Reference>
+    <Reference Include="WIN.TECHNICAL.VB.UTILS">
+      <HintPath>..\dlls\WIN.TECHNICAL.VB.UTILS.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="WIN.APPLICATION" />
+    <Import Include="WIN.BASEREUSE" />
+    <Import Include="WIN.DOMAIN" />
+    <Import Include="WIN.DOMAIN.FED_SERVICES" />
+    <Import Include="WIN.DOMAIN.FED_SERVICES.My" />
+    <Import Include="WIN.SECURITY" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DataRetrievers\DataInfoRetrieverFactory.vb" />
+    <Compile Include="DataRetrievers\DataRetireverInps.vb" />
+    <Compile Include="DataRetrievers\DataRetrieverAnagraficheAziende.vb" />
+    <Compile Include="DataRetrievers\DataInfoRetriever.vb" />
+    <Compile Include="DataRetrievers\DataRetrieverAnagraficheUtente.vb" />
+    <Compile Include="DataRetrievers\DataRetrieverIQI.vb" />
+    <Compile Include="DataRetrievers\DataRevocheRetriever.vb" />
+    <Compile Include="DataRetrievers\HashTableFromInpsTemplateConverter.vb" />
+    <Compile Include="DataRetrievers\MultipleFileDataRetriever.vb" />
+    <Compile Include="DelegheBehaviourChains\AbsctractChain.vb" />
+    <Compile Include="DelegheBehaviourChains\AcceptDelegaChain.vb" />
+    <Compile Include="DelegheBehaviourChains\CancelDelegaChain.vb" />
+    <Compile Include="DataRetrievers\DataRetriever.vb" />
+    <Compile Include="DataRetrievers\DataRetrieverIQA.vb" />
+    <Compile Include="DataRetrievers\DataRetrieverLiberi.vb" />
+    <Compile Include="DomainRetrievers\AziendaRetriever.vb" />
+    <Compile Include="DomainRetrievers\CausaleRetriever.vb" />
+    <Compile Include="DomainRetrievers\DelegheEdiliCounterRetriever.vb" />
+    <Compile Include="DomainRetrievers\EnteRetriever.vb" />
+    <Compile Include="DomainRetrievers\ReferenteRetriever.vb" />
+    <Compile Include="DomainRetrievers\SettoreRetiever.vb" />
+    <Compile Include="DomainRetrievers\TipoPrestazioneRetriever.vb" />
+    <Compile Include="DomainRetrievers\UtenteRetriever.vb" />
+    <Compile Include="Exceptions\ImportIQIException.vb" />
+    <Compile Include="Exceptions\ImportRevocaDelegaException.vb" />
+    <Compile Include="Exceptions\ImportTipoPrestazioneException.vb" />
+    <Compile Include="ExistenceCheckers\ExistAzindaImpiegoChecker.vb" />
+    <Compile Include="ExistenceCheckers\ExistUserChekcer.vb" />
+    <Compile Include="ExistenceCheckers\ExistUserForIQAChecker.vb" />
+    <Compile Include="ExistenceCheckers\ExsistAziendaChecker.vb" />
+    <Compile Include="ExistenceCheckers\ExsistContractChecker.vb" />
+    <Compile Include="ExistenceCheckers\ExsistReferenteChecker.vb" />
+    <Compile Include="ExistenceCheckers\ExsistRepartoChecker.vb" />
+    <Compile Include="Field.vb" />
+    <Compile Include="ExistenceCheckers\IDomainObjectExistenceChecker.vb" />
+    <Compile Include="Exceptions\ImportAziendaException.vb" />
+    <Compile Include="Exceptions\ImportDelegaException.vb" />
+    <Compile Include="Exceptions\ImportException.vb" />
+    <Compile Include="Exceptions\ImportContrattiException.vb" />
+    <Compile Include="Exceptions\ImportInfoUtenteException.vb" />
+    <Compile Include="Exceptions\ImportIQAException.vb" />
+    <Compile Include="Exceptions\ImportReferenteException.vb" />
+    <Compile Include="Exceptions\ImportRepartiException.vb" />
+    <Compile Include="Exceptions\ImportUtenteException.vb" />
+    <Compile Include="InsertCommands\InsertAziendeCommand.vb" />
+    <Compile Include="InsertCommands\InsertContrattoCommand.vb" />
+    <Compile Include="InsertCommands\InsertDelegaCommand.vb" />
+    <Compile Include="InsertCommands\InsertInfoUtenteCommand.vb" />
+    <Compile Include="InsertCommands\InsertIQACommand.vb" />
+    <Compile Include="InsertCommands\InsertIQAEdili.vb" />
+    <Compile Include="InsertCommands\InsertIQAImpiantiFissiCommand.vb" />
+    <Compile Include="InsertCommands\InsertIQICommand.vb" />
+    <Compile Include="InsertCommands\InsertIQPCommand.vb" />
+    <Compile Include="InsertCommands\InsertPrestazioneCommand.vb" />
+    <Compile Include="InsertCommands\InsertReferenteCommand.vb" />
+    <Compile Include="InsertCommands\InsertRepartoCommand.vb" />
+    <Compile Include="InsertCommands\InsertTipoPrestazioneCommand.vb" />
+    <Compile Include="InsertCommands\InsertUtentiCommand.vb" />
+    <Compile Include="InsertCommands\RevokeDelegaCommand.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="DelegheBehaviourChains\RevokeDelegaChain.vb" />
+    <Compile Include="SheetStructure.vb" />
+    <Compile Include="DelegheBehaviourChains\SubscribeDelegaChain.vb" />
+    <Compile Include="UpdateCommands\PartialUpdateUtenteCommand.vb" />
+    <Compile Include="UpdateCommands\UpdateAziendaCommand.vb" />
+    <Compile Include="UpdateCommands\UpdateUtenteCommand.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\WIN.FENGEST.HANDLERS\WIN.FENGEST.HANDLERS.vbproj">
+      <Project>{677821DF-57ED-4409-B2A6-384DAD0679B7}</Project>
+      <Name>WIN.FENGEST.HANDLERS</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WIN.FENGEST_ARTIFACTS.DOMAIN\WIN.FENGEST_ARTIFACTS.DOMAIN.vbproj">
+      <Project>{4CDA0A25-48A3-4B0D-B71F-2EB0A82BFD15}</Project>
+      <Name>WIN.FENGEST_ARTIFACTS.DOMAIN</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WIN.FENGEST_SERVICES.DOMAIN\WIN.FENGEST_SERVICES.DOMAIN.vbproj">
+      <Project>{15FC8C5D-7817-457E-8F1F-E3958C95C070}</Project>
+      <Name>WIN.FENGEST_SERVICES.DOMAIN</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

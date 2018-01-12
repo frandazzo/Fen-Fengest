@@ -1,0 +1,78 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="My" GeneratedClassName="MySettings" UseMySettingsClassName="true">
+  <Profiles />
+  <Settings>
+    <Setting Name="Ds21_PDF" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Ds__21.pdf</Value>
+    </Setting>
+    <Setting Name="Ds21_PDF_OLD" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Ds__21_old.pdf</Value>
+    </Setting>
+    <Setting Name="ASSEGNO_PER_PRESTAZIONI" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Richiesta Assegni per prestazioni.pdf</Value>
+    </Setting>
+    <Setting Name="ASSEGGNO_INCLUSIONE" Type="System.String" Scope="User">
+      <Value Profile="(Default)">ANF 42 - INCLUSIONE.pdf</Value>
+    </Setting>
+    <Setting Name="ANFGESTSEP" Type="System.String" Scope="User">
+      <Value Profile="(Default)">ANFGESTSEP.pdf</Value>
+    </Setting>
+    <Setting Name="ASSEGNI_FAMIGLIA_NUMEROSA" Type="System.String" Scope="User">
+      <Value Profile="(Default)">ANF_NN.pdf</Value>
+    </Setting>
+    <Setting Name="ASSEGNO_FAMILIARE" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Richiesta Assegni Familiari per Dipendenti.pdf</Value>
+    </Setting>
+    <Setting Name="CONGEDO_PARENTALE" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Congedo Parentale.pdf</Value>
+    </Setting>
+    <Setting Name="CURE_TERMALI" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Mod Cure Termali.pdf</Value>
+    </Setting>
+    <Setting Name="DICHIRAZIONE_MALATTIA" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Dichiarazione di Malattia.pdf</Value>
+    </Setting>
+    <Setting Name="DISOCCUPAZIONE_REQUISITI_RIDOTTI" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Disoccupazione Requisiti Ridotti.pdf</Value>
+    </Setting>
+    <Setting Name="MATERNITA_OBBLIGATORIA" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Maternit… - Stato.pdf</Value>
+    </Setting>
+    <Setting Name="MODELLO_DETRAZIONI" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Modello di detrazioni.pdf</Value>
+    </Setting>
+    <Setting Name="MODELLO_HANDICAP" Type="System.String" Scope="User">
+      <Value Profile="(Default)">MOD.HAND2.pdf</Value>
+    </Setting>
+    <Setting Name="PERMANENZA_DS" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Dichiarazione di Permanenza Disoccupazione.pdf</Value>
+    </Setting>
+    <Setting Name="Setting10" Type="System.String" Scope="User">
+      <Value Profile="(Default)">DisoccupazioneOrdinaria-Autocertificazione.pdf</Value>
+    </Setting>
+    <Setting Name="Setting11" Type="System.String" Scope="User">
+      <Value Profile="(Default)">DL86_88bis.pdf</Value>
+    </Setting>
+    <Setting Name="Setting12" Type="System.String" Scope="User">
+      <Value Profile="(Default)">DS22 - Modello Impresa.pdf</Value>
+    </Setting>
+    <Setting Name="Setting13" Type="System.String" Scope="User">
+      <Value Profile="(Default)">ECOCERT.pdf</Value>
+    </Setting>
+    <Setting Name="Setting18" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Modello Hand per maggiorenni.pdf</Value>
+    </Setting>
+    <Setting Name="Setting19" Type="System.String" Scope="User">
+      <Value Profile="(Default)">O1M SOST.pdf</Value>
+    </Setting>
+    <Setting Name="Setting3" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Assegni 2006.pdf</Value>
+    </Setting>
+    <Setting Name="Setting4" Type="System.String" Scope="User">
+      <Value Profile="(Default)">CIGS - PAG. DIRETTO.pdf</Value>
+    </Setting>
+    <Setting Name="Setting6" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Delega ModInps.PDF</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

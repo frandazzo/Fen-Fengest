@@ -1,0 +1,274 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{15FC8C5D-7817-457E-8F1F-E3958C95C070}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>WIN.DOMAIN.FED_SERVICES</RootNamespace>
+    <AssemblyName>WIN.FENGEST_SERVICES.DOMAIN</AssemblyName>
+    <MyType>Windows</MyType>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <PublishUrl>http://localhost/WIN.FENGEST_SERVICES.DOMAIN/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Web" />
+    <Reference Include="WIN.TECHNICAL.PDF_PRINTER">
+      <HintPath>..\dlls\WIN.TECHNICAL.PDF_PRINTER.dll</HintPath>
+    </Reference>
+    <Reference Include="WIN.TECHNICAL.SECURITY">
+      <HintPath>..\dlls\WIN.TECHNICAL.SECURITY.dll</HintPath>
+    </Reference>
+    <Reference Include="WIN.TECHNICAL.VB.PERSISTENCE">
+      <HintPath>..\dlls\WIN.TECHNICAL.VB.PERSISTENCE.dll</HintPath>
+    </Reference>
+    <Reference Include="WIN.TECHNICAL.VB.UTILS">
+      <HintPath>..\dlls\WIN.TECHNICAL.VB.UTILS.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="WIN.BASEREUSE" />
+    <Import Include="WIN.DOMAIN.FEDERATIONARTIFACTS" />
+    <Import Include="WIN.DOMAIN.INTERFACES" />
+    <Import Include="WIN.SECURITY" />
+    <Import Include="WIN.TECHNICAL" />
+    <Import Include="WIN.TECHNICAL.PERSISTENCE" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Comunicazioni\ComunicazioniComparer.vb" />
+    <Compile Include="Comunicazioni\ComunicazioniTimeSorter.vb" />
+    <Compile Include="Deleghe\BozzaDelega.vb" />
+    <Compile Include="Deleghe\CausaleNulla.vb" />
+    <Compile Include="Deleghe\CausaleRevocaDelega.vb" />
+    <Compile Include="Deleghe\CausaleSottoscrizioneDelega.vb" />
+    <Compile Include="Deleghe\CausaleSottoscrizioneNulla.vb" />
+    <Compile Include="Comunicazioni\CausaleComunicazione.vb" />
+    <Compile Include="Comunicazioni\Comunicazione.vb" />
+    <Compile Include="Comunicazioni\TipoComunicazione.vb" />
+    <Compile Include="Deleghe\Delega.vb" />
+    <Compile Include="Deleghe\DelegaNulla.vb" />
+    <Compile Include="Deleghe\DelegheComparer.vb" />
+    <Compile Include="Deleghe\DelegheTimeSorter.vb" />
+    <Compile Include="Deleghe\DTODelega.vb" />
+    <Compile Include="Pratiche\IPracticeState.vb" />
+    <Compile Include="Pratiche\Pratica.vb" />
+    <Compile Include="Pratiche\PraticaDetail.vb" />
+    <Compile Include="Pratiche\PraticaEvent.vb" />
+    <Compile Include="Pratiche\StateData.vb" />
+    <Compile Include="Pratiche\StatiPratica\AbstractPraticaState.vb" />
+    <Compile Include="Pratiche\StatiPratica\Aperta.vb" />
+    <Compile Include="Pratiche\StatiPratica\Chiusa.vb" />
+    <Compile Include="Pratiche\StatiPratica\Confermata.vb" />
+    <Compile Include="Pratiche\StatiPratica\Controllo.vb" />
+    <Compile Include="Pratiche\StatiPratica\Integrazione.vb" />
+    <Compile Include="Pratiche\StatiPratica\PracticeEnum.vb" />
+    <Compile Include="Pratiche\StatiPratica\PracticeStateFactory.vb" />
+    <Compile Include="Pratiche\StatiPratica\Rigettata.vb" />
+    <Compile Include="Pratiche\TipoPratica.vb" />
+    <Compile Include="Prestazioni\DocumentCreator\DocumentCreatorFactory.vb" />
+    <Compile Include="Prestazioni\DocumentCreator\DummyAdapter.vb" />
+    <Compile Include="Prestazioni\DocumentCreator\GenericCreatorAdapter.vb" />
+    <Compile Include="Prestazioni\DocumentCreator\IDocumentCreatorAdapter.vb" />
+    <Compile Include="Prestazioni\DocumentCreator\PdfCompilerAdapter.vb" />
+    <Compile Include="Prestazioni\DocumentCreator\PdfCompilerANFGESTSEP.vb" />
+    <Compile Include="Prestazioni\DocumentCreator\PdfCompilerASSEGGNO_INCLUSIONE.vb" />
+    <Compile Include="Prestazioni\DocumentCreator\PdfCompilerASSEGNI_FAMIGLIA_NUMEROSA.vb" />
+    <Compile Include="Prestazioni\DocumentCreator\PdfCompilerAssegnoFamiliareAdapter.vb" />
+    <Compile Include="Prestazioni\DocumentCreator\PdfCompilerASSEGNO_FAMILIARE.vb" />
+    <Compile Include="Prestazioni\DocumentCreator\PdfCompilerCONGEDO_PARENTALE.vb" />
+    <Compile Include="Prestazioni\DocumentCreator\PdfCompilerCURE_TERMALI.vb" />
+    <Compile Include="Prestazioni\DocumentCreator\PdfCompilerDelega.vb" />
+    <Compile Include="Prestazioni\DocumentCreator\PdfCompilerDICHIRAZIONE_MALATTIA.vb" />
+    <Compile Include="Prestazioni\DocumentCreator\PdfCompilerDISOCCUPAZIONE_REQUISITI_RIDOTTI.vb" />
+    <Compile Include="Prestazioni\DocumentCreator\PdfCompilerMATERNITA_OBBLIGATORIA.vb" />
+    <Compile Include="Prestazioni\DocumentCreator\PdfCompilerMODELLO_DETRAZIONI.vb" />
+    <Compile Include="Prestazioni\DocumentCreator\PdfCompilerMODELLO_HANDICAP.vb" />
+    <Compile Include="Prestazioni\DocumentCreator\PdfCompilerPERMANENZA_DS.vb" />
+    <Compile Include="Prestazioni\DocumentCreator\PdfCompilerSetting10.vb" />
+    <Compile Include="Prestazioni\DocumentCreator\PdfCompilerSetting11.vb" />
+    <Compile Include="Prestazioni\DocumentCreator\PdfCompilerSetting12.vb" />
+    <Compile Include="Prestazioni\DocumentCreator\PdfCompilerSetting13.vb" />
+    <Compile Include="Prestazioni\DocumentCreator\PdfCompilerSetting18.vb" />
+    <Compile Include="Prestazioni\DocumentCreator\PdfCompilerSetting19.vb" />
+    <Compile Include="Prestazioni\DocumentCreator\PdfCompilerSetting3.vb" />
+    <Compile Include="Prestazioni\DocumentCreator\PdfCompilerSetting4.vb" />
+    <Compile Include="Prestazioni\DocumentCreator\PdfCompilerSetting6.vb" />
+    <Compile Include="Prestazioni\PrestazioniTimeSorter.vb" />
+    <Compile Include="ProposteLavoro\PropostaLavoroComparer.vb" />
+    <Compile Include="ProposteLavoro\PropostaLavoroTimeSorter.vb" />
+    <Compile Include="Sms\ISmsSender.vb" />
+    <Compile Include="Sms\MultipleSms.vb" />
+    <Compile Include="Sms\SingleSms.vb" />
+    <Compile Include="Sms\skebby\SkebbyErrorCodeSummary.vb" />
+    <Compile Include="Sms\skebby\SkebbySmsProvider.vb" />
+    <Compile Include="Sms\skebby\SkebbySmsSender.vb" />
+    <Compile Include="Sms\skebby\SkebbySmsType.vb" />
+    <Compile Include="Sms\SmsRecipient.vb" />
+    <Compile Include="Sms\SmsFacade.vb" />
+    <Compile Include="Sms\SmsProviderData.vb" />
+    <Compile Include="Sms\SmsSendResult.vb" />
+    <Compile Include="Vertenze\Eventi\Evento.vb" />
+    <Compile Include="Vertenze\Eventi\EventoNullo.vb" />
+    <Compile Include="Vertenze\Istituti\IstitutoContrattuale.vb" />
+    <Compile Include="Vertenze\Istituti\IstitutoNullo.vb" />
+    <Compile Include="Prestazioni\PrestazioniComparer.vb" />
+    <Compile Include="ProposteLavoro\PropostaLavoro.vb" />
+    <Compile Include="Vertenze\TipiEvento\TipoEventoAmministrativo.vb" />
+    <Compile Include="Vertenze\TipiEvento\TipoEventoConciliazione.vb" />
+    <Compile Include="Vertenze\TipiEvento\TipoEventoFactory.vb" />
+    <Compile Include="Vertenze\TipiEvento\TipoEventoMancataConciliazione.vb" />
+    <Compile Include="Vertenze\TipiEvento\TipoEventoProcedimentoLegale.vb" />
+    <Compile Include="Deleghe\StatiDelega\IStatusDelega.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Prestazioni\Prestazione.vb" />
+    <Compile Include="Prestazioni\PrestazioneNulla.vb" />
+    <Compile Include="Deleghe\StatiDelega\StAccettata.vb" />
+    <Compile Include="Deleghe\StatiDelega\StAnnullata.vb" />
+    <Compile Include="Deleghe\StatiDelega\StAttiva.vb" />
+    <Compile Include="Deleghe\StatiDelega\StatusDelegaFactory.vb" />
+    <Compile Include="Deleghe\StatiDelega\StInoltrata.vb" />
+    <Compile Include="Deleghe\StatiDelega\StNull.vb" />
+    <Compile Include="Deleghe\StatiDelega\StRevocata.vb" />
+    <Compile Include="Deleghe\StatiDelega\StSottoscritta.vb" />
+    <Compile Include="Vertenze\TipiEvento\TipoEvento.vb" />
+    <Compile Include="Vertenze\TipiEvento\TipoEventoNullo.vb" />
+    <Compile Include="Prestazioni\TipoPrestazione.vb" />
+    <Compile Include="Prestazioni\TipoPrestazioneNulla.vb" />
+    <Compile Include="Vertenze\Vertenza.vb" />
+    <Compile Include="Vertenze\VertenzaNulla.vb" />
+    <Compile Include="Vertenze\VertenzeComparer.vb" />
+    <Compile Include="ServicesTimeSorter.vb" />
+    <Compile Include="Vertenze\VertenzeTimeSorter.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="ProposteLavoro\Proposta di lavoro.cd" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\WIN.FENGEST_ARTIFACTS.DOMAIN\WIN.FENGEST_ARTIFACTS.DOMAIN.vbproj">
+      <Project>{4CDA0A25-48A3-4B0D-B71F-2EB0A82BFD15}</Project>
+      <Name>WIN.FENGEST_ARTIFACTS.DOMAIN</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WIN.FENGEST_INTERFACES.DOMAIN\WIN.FENGEST_INTERFACES.DOMAIN.vbproj">
+      <Project>{CBF388A0-2AD1-4D7C-8F12-3D3A4FF40BF6}</Project>
+      <Name>WIN.FENGEST_INTERFACES.DOMAIN</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

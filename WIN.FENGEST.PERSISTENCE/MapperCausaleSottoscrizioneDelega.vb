@@ -1,0 +1,102 @@
+Public Class MapperCausaleSottoscrizioneDelega
+   Inherits AbstractRDBMapper
+
+
+
+#Region "Istruzioni Sql"
+
+   Protected Overrides Function FindAllStatement() As String
+      Return "Select * from COD_CAUSALI_SOTTOSCRIZIONE"
+   End Function
+
+   Protected Overrides Function FindByKeyStatement() As String
+      Return "Select * from COD_CAUSALI_SOTTOSCRIZIONE where Id = @Id"
+   End Function
+
+   Protected Overrides Function InsertStatement() As String
+      Return "Insert into COD_CAUSALI_SOTTOSCRIZIONE (ID, DESCRIZIONE, CreatedBy, CreatedOn) values (@Id, @Desc, @CRby, @CRon)"
+   End Function
+
+   Protected Overrides Function UpdateStatement() As String
+      Return "UPDATE COD_CAUSALI_SOTTOSCRIZIONE SET Descrizione = @Desc, ModifiedBy = @MOby, ModifiedOn = @MOon   WHERE (Id =@Id )"
+   End Function
+
+   Protected Overrides Function DeleteStatement() As String
+      Return "Delete from COD_CAUSALI_SOTTOSCRIZIONE where Id = @Id"
+   End Function
+
+   Protected Overrides Function FindNextKeyStatement() As String
+      Return "Select Max(Id) from COD_CAUSALI_SOTTOSCRIZIONE"
+   End Function
+
+#End Region
+
+
+#Region "Metodi per la ricerca dell'oggetto secondo l'id proposto"
+
+   Public Overrides Function FindObjectById(ByVal Id As Integer) As AbstractPersistenceObject
+
+      Return DirectCast(MyBase.FindByKey(New Key(Id)), CausaleSottoscrizioneDelega)
+
+
+   End Function
+   Protected Overloads Overrides Function DoLoad(ByVal Key As Key, ByVal rs As System.Collections.Hashtable) As AbstractPersistenceObject
+      Try
+         Dim causale As CausaleSottoscrizioneDelega = New CausaleSottoscrizioneDelega
+         causale.Descrizione = rs.Item("DESCRIZIONE")
+         causale.Key = Key
+         JournalingDataLoader.ReadJournalingParameters(causale, rs)
+         Return causale
+      Catch ex As Exception
+         Throw New Exception("Impossibile caricare l'oggetto Causale sottoscrizione delega con Id = " & Key.LongValue & ". " & vbCrLf & ex.Message)
+      End Try
+   End Function
+    'Protected Overrides Function GetCommand(ByVal CommandText As String) As System.Data.IDbCommand
+
+    '   'Return New SqlClient1.SqlCommand(CommandText, DBConnectionManager.Instance.GetCurrentConnection)
+    '   Return DBTypeUtils.GetCommand(Me.m_PersistentService.ServiceName, CommandText, DBConnectionManager.Instance.GetCurrentConnection)
+    'End Function
+
+#End Region
+
+
+
+
+   Protected Overrides Sub LoadInsertCommandParameters(ByVal Item As AbstractPersistenceObject, ByVal Cmd As System.Data.IDbCommand)
+      Try
+         Dim causale As CausaleSottoscrizioneDelega = DirectCast(Item, CausaleSottoscrizioneDelega)
+
+         Dim param As IDbDataParameter = Cmd.CreateParameter
+         param.ParameterName = "@Desc"
+         param.Value = causale.Descrizione
+         Cmd.Parameters.Add(param)
+
+         JournalingDataLoader.LoadJournalingInsertCommandParameters(Item, Cmd)
+
+      Catch ex As Exception
+         Throw New Exception("Impossibile caricare il comando di inserimento dell'oggetto  causale sottoscrizione delega." & vbCrLf & ex.Message)
+      End Try
+   End Sub
+
+   Protected Overrides Sub LoadUpdateCommandParameters(ByVal Item As AbstractPersistenceObject, ByVal Cmd As System.Data.IDbCommand)
+      Try
+         Dim causale As CausaleSottoscrizioneDelega = DirectCast(Item, CausaleSottoscrizioneDelega)
+
+         Dim param As IDbDataParameter = Cmd.CreateParameter
+         param.ParameterName = "@Desc"
+         param.Value = causale.Descrizione
+         Cmd.Parameters.Add(param)
+
+         JournalingDataLoader.LoadJournalingUpdateCommandParameters(Item, Cmd)
+
+         param = Cmd.CreateParameter
+         param.ParameterName = "@Id"
+         param.Value = causale.Id
+         Cmd.Parameters.Add(param)
+
+      Catch ex As Exception
+         Throw New Exception("Impossibile caricare il comando di aggiornamento dell'oggetto causale sottoscrizione delega." & vbCrLf & ex.Message)
+      End Try
+   End Sub
+
+End Class

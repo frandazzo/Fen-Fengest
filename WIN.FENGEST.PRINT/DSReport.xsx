@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Questo file viene generato automaticamente dalla Progettazione schema XML. Contiene informazioni sul layout dei componenti nell'area di progettazione.-->
+<XSDDesignerLayout Style="LeftRight" layoutVersion="2" viewPortLeft="22405" viewPortTop="5280" zoom="100">
+    <Utente_XmlElement left="1317" top="1254" width="8175" height="12144" selected="0" zOrder="1" index="0" expanded="1" />
+    <Delega_XmlElement left="10874" top="1497" width="9366" height="11298" selected="0" zOrder="2" index="1" expanded="1" />
+    <Referente_XmlElement left="13038" top="25711" width="8122" height="6641" selected="0" zOrder="10" index="2" expanded="1" />
+    <Prestazione_XmlElement left="20" top="17198" width="8811" height="6218" selected="0" zOrder="15" index="3" expanded="1" />
+    <Azienda_XmlElement left="1323" top="41699" width="9630" height="7488" selected="0" zOrder="29" index="4" expanded="1" />
+    <Preferenza_XmlElement left="14529" top="13979" width="5292" height="2831" selected="0" zOrder="4" index="5" expanded="1" />
+    <Attitudine_XmlElement left="11504" top="33002" width="5292" height="2831" selected="0" zOrder="24" index="6" expanded="1" />
+    <SedeOperativa_XmlElement left="12594" top="37015" width="8678" height="6218" selected="0" zOrder="30" index="7" expanded="1" />
+    <Reparto_XmlElement left="-692" top="35328" width="5292" height="2831" selected="0" zOrder="31" index="8" expanded="1" />
+    <Vertenza_XmlElement left="9763" top="17754" width="8176" height="5371" selected="0" zOrder="32" index="9" expanded="1" />
+    <Istituto_XmlElement left="-1142" top="24718" width="5292" height="2831" selected="0" zOrder="33" index="10" expanded="1" />
+    <TipoContratto_XmlElement left="1317" top="49695" width="5292" height="2831" selected="0" zOrder="34" index="11" expanded="1" />
+    <TipoPrestazione_XmlElement left="22955" top="22653" width="5292" height="2831" selected="0" zOrder="35" index="12" expanded="1" />
+    <CausaleRevoca_XmlElement left="22949" top="29612" width="5292" height="2831" selected="0" zOrder="37" index="13" expanded="1" />
+    <CausaleSottoscrizione_XmlElement left="22950" top="33078" width="5292" height="2831" selected="0" zOrder="38" index="14" expanded="1" />
+    <IstitutoContratuale_XmlElement left="22950" top="25987" width="5292" height="2831" selected="0" zOrder="39" index="15" expanded="1" />
+    <Abilita_XmlElement left="5822" top="35591" width="5292" height="2831" selected="0" zOrder="41" index="16" expanded="1" />
+    <LivelloAbilita_XmlElement left="-660" top="38316" width="5292" height="2831" selected="0" zOrder="42" index="17" expanded="1" />
+    <Evento_XmlElement left="2330" top="30561" width="5292" height="2831" selected="0" zOrder="43" index="18" expanded="1" />
+    <HaderReportIscritti_XmlElement left="20848" top="-1614" width="7885" height="5371" selected="0" zOrder="44" index="19" expanded="1" />
+    <ItemReportIscritti_XmlElement left="20743" top="4101" width="7461" height="4101" selected="0" zOrder="45" index="20" expanded="1" />
+    <HaderReportIncassiQuote_XmlElement left="20373" top="8599" width="8996" height="4948" selected="0" zOrder="46" index="21" expanded="1" />
+    <ItemReportIncassiQuote_XmlElement left="20267" top="13785" width="9181" height="7911" selected="0" zOrder="48" index="22" expanded="1" />
+    <OfferteLavoro_XmlElement left="12382" top="43604" width="8413" height="3254" selected="0" zOrder="50" index="23" expanded="1" />
+    <PosizioniOfferteLavoro_XmlElement left="11853" top="47121" width="8519" height="3678" selected="0" zOrder="51" index="24" expanded="1" />
+    <ProposteLavoro_XmlElement left="22832" top="36805" width="7091" height="2831" selected="0" zOrder="52" index="25" expanded="1" />
+    <DettaglioProposteLavoro_XmlElement left="22674" top="40720" width="8863" height="4947" selected="0" zOrder="53" index="26" expanded="1" />
+    <SkillRichiestiProposteLavoroDettaglio_XmlElement left="21563" top="46144" width="10874" height="1984" selected="0" zOrder="54" index="27" expanded="1" />
+    <AnalisiOfferteLavoro_XmlElement left="26458" top="52414" width="7646" height="3254" selected="0" zOrder="55" index="28" expanded="1" />
+    <DettaglioAnalisiOfferteLavoro_XmlElement left="11747" top="52362" width="13018" height="3677" selected="0" zOrder="56" index="29" expanded="1" />
+    <AnalisiDomandeLavoro_XmlElement left="22938" top="48869" width="6958" height="2408" selected="0" zOrder="57" index="30" expanded="1" />
+    <UtentiAnalisiDomandeLavoro_XmlElement left="30983" top="48499" width="8598" height="2831" selected="0" zOrder="58" index="31" expanded="1" />
+    <TipiComunicazione_XmlElement left="30029" top="22887" width="7620" height="1561" selected="0" zOrder="59" index="32" expanded="1" />
+    <CausaliComunicazione_XmlElement left="29288" top="24898" width="8255" height="1561" selected="0" zOrder="61" index="33" expanded="1" />
+    <Comunicazioni_XmlElement left="29368" top="26645" width="7725" height="2831" selected="0" zOrder="63" index="34" expanded="1" />
+    <DettaglioComunicazioni_XmlElement left="30029" top="29951" width="8572" height="4948" selected="0" zOrder="65" index="35" expanded="1" />
+    <UtenteProposteLavoro_XmlElement left="31534" top="36959" width="5292" height="2831" selected="0" zOrder="66" index="36" expanded="1" />
+    <HeaderListaLavoro_XmlElement left="32543" top="40217" width="5291" height="1561" selected="0" zOrder="67" index="37" expanded="1" />
+    <DettagliListaLavoro_XmlElement left="33903" top="43042" width="5292" height="2831" selected="0" zOrder="68" index="38" expanded="1" />
+    <HeaderDocumentoIncassi_XmlElement left="29950" top="-1376" width="9736" height="4525" selected="0" zOrder="69" index="39" expanded="1" />
+    <DettagliDocumentoIncassi_XmlElement left="29737" top="3360" width="9922" height="10452" selected="0" zOrder="70" index="40" expanded="1" />
+    <HaderReportLavoratoriLiberi_XmlElement left="29739" top="14393" width="9499" height="2408" selected="0" zOrder="72" index="41" expanded="1" />
+    <DettagliReportLavoratoriLIberi_XmlElement left="29792" top="17119" width="10663" height="3677" selected="0" zOrder="74" index="42" expanded="1" />
+    <AnagraficaEnte_XmlElement left="1317" top="56547" width="5292" height="2831" selected="0" zOrder="76" index="43" expanded="1" />
+    <UtentePrestazione_XmlKeyref left="-6054" top="8861" width="503" height="503" selected="0" zOrder="16" expanded="0" />
+    <ReferenteDelega_XmlKeyref left="11430" top="13160" width="503" height="503" selected="0" zOrder="11" expanded="0" />
+    <UtenteAttitudine_XmlKeyref left="2932" top="25540" width="503" height="503" selected="0" zOrder="25" expanded="0" />
+    <UtenteDelega_XmlKeyref left="3190" top="-5339" width="503" height="503" selected="0" zOrder="6" expanded="0" />
+    <UtentePreferenza_XmlKeyref left="2573" top="9847" width="503" height="503" selected="0" zOrder="20" expanded="0" />
+</XSDDesignerLayout>

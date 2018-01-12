@@ -1,0 +1,244 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4CDA0A25-48A3-4B0D-B71F-2EB0A82BFD15}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>WIN.DOMAIN.FEDERATIONARTIFACTS</RootNamespace>
+    <AssemblyName>WIN.FENGEST_ARTIFACTS.DOMAIN</AssemblyName>
+    <MyType>Windows</MyType>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <PublishUrl>http://localhost/WIN.FENGEST_ARTIFACTS.DOMAIN/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="WIN.TECHNICAL.VB.PERSISTENCE">
+      <HintPath>..\dlls\WIN.TECHNICAL.VB.PERSISTENCE.dll</HintPath>
+    </Reference>
+    <Reference Include="WIN.TECHNICAL.VB.UTILS">
+      <HintPath>..\dlls\WIN.TECHNICAL.VB.UTILS.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="WIN.BASEREUSE" />
+    <Import Include="WIN.DOMAIN" />
+    <Import Include="WIN.DOMAIN.CONGRUITY_CALCULATORS" />
+    <Import Include="WIN.DOMAIN.FEDERATIONARTIFACTS" />
+    <Import Include="WIN.DOMAIN.INTERFACES" />
+    <Import Include="WIN.SECURITY" />
+    <Import Include="WIN.TECHNICAL.PERSISTENCE" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Aziende\Cantiere.vb" />
+    <Compile Include="Aziende\ExcelExporterListaAziende.vb" />
+    <Compile Include="Aziende\LavoratoriAziendaExcelExporter.vb" />
+    <Compile Include="Aziende\ReportZona.vb" />
+    <Compile Include="Documenti\ArchivioDocumenti.vb" />
+    <Compile Include="Documenti\ElectronicDocumentComparer.vb" />
+    <Compile Include="Documenti\ElectronicDocumentDTO.vb" />
+    <Compile Include="ImportExport\ImportExport.vb" />
+    <Compile Include="ReportDTO\DelegadTO.vb" />
+    <Compile Include="ReportDTO\DelegheDTOComparer.vb" />
+    <Compile Include="ReportDTO\IscrittoDTO.vb" />
+    <Compile Include="ReportDTO\IscrittoDTOComparer.vb" />
+    <Compile Include="ReportDTO\IscrittoNonIscrittoDTO.vb" />
+    <Compile Include="ReportDTO\NonIscrittoDTO.vb" />
+    <Compile Include="ReportDTO\NonIscrittoDTOComparer.vb" />
+    <Compile Include="ReportDTO\PrestazioneDTO.vb" />
+    <Compile Include="ReportDTO\PrestazioneDTOComparer.vb" />
+    <Compile Include="ReportDTO\Quota.vb" />
+    <Compile Include="ReportDTO\QuotaDTOComparer.vb" />
+    <Compile Include="ReportDTO\VertenzaDTO.vb" />
+    <Compile Include="ReportDTO\VertenzaDTOComparer.vb" />
+    <Compile Include="Segreteria\Personale\Avvocato.vb" />
+    <Compile Include="Segreteria\Rendiconto.vb" />
+    <Compile Include="Utenti\CodificaEnti.vb" />
+    <Compile Include="Utenti\Coniuge.vb" />
+    <Compile Include="Utenti\Incarichi\Incarico.vb" />
+    <Compile Include="Utenti\Incarichi\IncaricoDTO.vb" />
+    <Compile Include="Utenti\Incarichi\TipoIncarico.vb" />
+    <Compile Include="Utenti\Liberi\DTOLavoratoreLibero.vb" />
+    <Compile Include="Documenti\ElectronicDocument.vb" />
+    <Compile Include="Documenti\ElectronicDocumentAzienda.vb" />
+    <Compile Include="Documenti\ElectronicDocumentFactory.vb" />
+    <Compile Include="Documenti\ElectronicDocumentSegreteria.vb" />
+    <Compile Include="Documenti\ElectronicDocumentUtente.vb" />
+    <Compile Include="Utenti\Figlio.vb" />
+    <Compile Include="Segreteria\Fondo.vb" />
+    <Compile Include="Utenti\Curriculum\KnowHow.vb" />
+    <Compile Include="Aziende\AziendaNonSpecificata.vb" />
+    <Compile Include="Segreteria\Contratti\Contratto.vb" />
+    <Compile Include="Segreteria\Contratti\ContrattoNullo.vb" />
+    <Compile Include="Utenti\Liberi\Info.vb" />
+    <Compile Include="Aziende\Enti\Inps.vb" />
+    <Compile Include="Utenti\Liberi\LavoratoreLiberoComparer.vb" />
+    <Compile Include="Utenti\Liste lavoro\ComponenteLista.vb" />
+    <Compile Include="Utenti\Liste lavoro\ConfrontoListe.vb" />
+    <Compile Include="Utenti\Liste lavoro\ExcelExporterConfronto.vb" />
+    <Compile Include="Utenti\Liste lavoro\ExcelExporterListaLavoro.vb" />
+    <Compile Include="Utenti\Liste lavoro\GestoreConfrontoListe.vb" />
+    <Compile Include="Utenti\Liste lavoro\ListaComponenti.vb" />
+    <Compile Include="Utenti\Liste lavoro\ListaLavoroUtenti.vb" />
+    <Compile Include="Utenti\Curriculum\LivelloAbilita.vb" />
+    <Compile Include="DomandeOfferte\OffertaLavoro.vb" />
+    <Compile Include="DomandeOfferte\OffertaLavoroComparer.vb" />
+    <Compile Include="DomandeOfferte\OffertaLavoroItem.vb" />
+    <Compile Include="Utenti\Curriculum\Preferenza.vb" />
+    <Compile Include="Aziende\RepartoAzienda.vb" />
+    <Compile Include="Aziende\RepartoNullo.vb" />
+    <Compile Include="Aziende\SedeOperativa.vb" />
+    <Compile Include="Aziende\SedeOperativaNulla.vb" />
+    <Compile Include="Utenti\Curriculum\Abilita.vb" />
+    <Compile Include="Segreteria\Segreteria.vb" />
+    <Compile Include="Utenti\SituazioneFamiliare.vb" />
+    <Compile Include="Utenti\TagUtente.vb" />
+    <Compile Include="Utenti\Tessere\Tessera.vb" />
+    <Compile Include="Segreteria\Contratti\TipoContratto.vb" />
+    <Compile Include="Segreteria\Contratti\TipoContrattoNullo.vb" />
+    <Compile Include="Aziende\Enti\EnteBilaterale.vb" />
+    <Compile Include="Segreteria\Federazione.vb" />
+    <Compile Include="Segreteria\Personale\ReferenteNullo.vb" />
+    <Compile Include="Aziende\Azienda.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Segreteria\Personale\Referente.vb" />
+    <Compile Include="Segreteria\Settori\Settore.vb" />
+    <Compile Include="Segreteria\Settori\SettoreNullo.vb" />
+    <Compile Include="Documenti\TipoDocumentazione.vb" />
+    <Compile Include="Utenti\Utente.vb" />
+    <Compile Include="Utenti\UtenteBolzano.vb" />
+    <Compile Include="Utenti\UtenteComparer.vb" />
+    <Compile Include="Utenti\UtenteDTO.vb" />
+    <Compile Include="Utenti\UtenteNonSpecificato.vb" />
+    <Compile Include="Utils\FenealgestSoftwareInfo.vb" />
+    <Compile Include="Utils\IdDescriptionClass.vb" />
+    <Compile Include="Utils\WordTagger.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\WIN.FENGEST_CONGRUITY_ENGINE.DOMAIN\WIN.FENGEST_CONGRUITY_ENGINE.DOMAIN.vbproj">
+      <Project>{7AD53DB3-DF36-4CB3-BF5A-D3695D804D80}</Project>
+      <Name>WIN.FENGEST_CONGRUITY_ENGINE.DOMAIN</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WIN.FENGEST_INTERFACES.DOMAIN\WIN.FENGEST_INTERFACES.DOMAIN.vbproj">
+      <Project>{CBF388A0-2AD1-4D7C-8F12-3D3A4FF40BF6}</Project>
+      <Name>WIN.FENGEST_INTERFACES.DOMAIN</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

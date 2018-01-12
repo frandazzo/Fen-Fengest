@@ -1,0 +1,396 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F6B84311-43CC-4EB9-9433-A0B043A20403}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>WIN.PERSISTENCE.SQLSERVER_SERVICES</RootNamespace>
+    <AssemblyName>WIN.FENGEST.PERSISTENCE</AssemblyName>
+    <MyType>Windows</MyType>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <PublishUrl>http://localhost/WIN.FENGEST.PERSISTENCE/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="WIN.SCHEDULING_APPLICATION.DOMAIN">
+      <HintPath>..\dlls\WIN.SCHEDULING_APPLICATION.DOMAIN.dll</HintPath>
+    </Reference>
+    <Reference Include="WIN.TECHNICAL.DEPLOYMENT, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\dlls\WIN.TECHNICAL.DEPLOYMENT.dll</HintPath>
+    </Reference>
+    <Reference Include="WIN.TECHNICAL.SECURITY">
+      <HintPath>..\dlls\WIN.TECHNICAL.SECURITY.dll</HintPath>
+    </Reference>
+    <Reference Include="WIN.TECHNICAL.VB.PERSISTENCE">
+      <HintPath>..\dlls\WIN.TECHNICAL.VB.PERSISTENCE.dll</HintPath>
+    </Reference>
+    <Reference Include="WIN.TECHNICAL.VB.UTILS">
+      <HintPath>..\dlls\WIN.TECHNICAL.VB.UTILS.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Runtime.Serialization.Formatters.Soap" />
+    <Import Include="WIN.BASEREUSE" />
+    <Import Include="WIN.DOMAIN" />
+    <Import Include="WIN.DOMAIN.CONGRUITY_CALCULATORS" />
+    <Import Include="WIN.DOMAIN.FEDERATIONARTIFACTS" />
+    <Import Include="WIN.DOMAIN.FED_SERVICES" />
+    <Import Include="WIN.DOMAIN.FINANCIAL" />
+    <Import Include="WIN.DOMAIN.INTERFACES" />
+    <Import Include="WIN.PERSISTENCE" />
+    <Import Include="WIN.PERSISTENCE.SQLSERVER_SERVICES" />
+    <Import Include="WIN.PERSISTENCE.SQLSERVER_SERVICES.My.Resources" />
+    <Import Include="WIN.SCHEDULING_APPLICATION" />
+    <Import Include="WIN.SCHEDULING_APPLICATION.DOMAIN" />
+    <Import Include="WIN.SCHEDULING_APPLICATION.DOMAIN.Amministrazione" />
+    <Import Include="WIN.SCHEDULING_APPLICATION.DOMAIN.Booking" />
+    <Import Include="WIN.SCHEDULING_APPLICATION.DOMAIN.ComboElements" />
+    <Import Include="WIN.SCHEDULING_APPLICATION.DOMAIN.Licensing" />
+    <Import Include="WIN.SECURITY" />
+    <Import Include="WIN.TECHNICAL" />
+    <Import Include="WIN.TECHNICAL.PERSISTENCE" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AbstractAziendaMapper.vb" />
+    <Compile Include="AbstractDocumentoContabileMapper.vb" />
+    <Compile Include="AbstractDocumentoMapper.vb" />
+    <Compile Include="LazyLoadIncarichi.vb" />
+    <Compile Include="LazyLoadPraticaDetails.vb" />
+    <Compile Include="LazyLoadPraticaEvents.vb" />
+    <Compile Include="MapperAvvocato.vb" />
+    <Compile Include="LaziLoadComuni.vb" />
+    <Compile Include="LazyLoadProvincie.vb" />
+    <Compile Include="MapperBozzaDelega.vb" />
+    <Compile Include="MapperCantiere.vb" />
+    <Compile Include="MapperDelegaDTO.vb" />
+    <Compile Include="MapperPratica.vb" />
+    <Compile Include="MapperPraticaDto.vb" />
+    <Compile Include="MapperSmsProviderData.vb" />
+    <Compile Include="MapperTipoPratica.vb" />
+    <Compile Include="Scheduling\LazyLoadAttachments.vb" />
+    <Compile Include="Scheduling\LazyLoadConctacts.vb" />
+    <Compile Include="Scheduling\LazyLoadDocumentBody.vb" />
+    <Compile Include="Scheduling\MapperAttachmentForDocument.vb" />
+    <Compile Include="Scheduling\MapperDocument.vb" />
+    <Compile Include="Scheduling\MapperDocumentScope.vb" />
+    <Compile Include="MapperElectronicDocument.vb" />
+    <Compile Include="AbstractHierarchicalMapper.vb" />
+    <Compile Include="AbstractPersonMapper.vb" />
+    <Compile Include="JournalingDataLoader.vb" />
+    <Compile Include="LazyLoadArchivioDocumentale.vb" />
+    <Compile Include="LazyLoadAttitudini.vb" />
+    <Compile Include="LazyLoadDeleghe.vb" />
+    <Compile Include="LazyLoadEventi.vb" />
+    <Compile Include="LazyLoadFigli.vb" />
+    <Compile Include="LazyLoadInfos.vb" />
+    <Compile Include="LazyLoadListaLavoroItems.vb" />
+    <Compile Include="LazyLoadOfferteLavoroItem.vb" />
+    <Compile Include="LazyLoadPermissionForProfile.vb" />
+    <Compile Include="LazyLoadPosizioniConto.vb" />
+    <Compile Include="LazyLoadPosizioniPagamento.vb" />
+    <Compile Include="LazyLoadPosizioniPagamentoReferenti.vb" />
+    <Compile Include="LazyLoadPosizioniQuoteInps.vb" />
+    <Compile Include="LazyLoadPosizioniQuoteVertenza.vb" />
+    <Compile Include="LazyLoadPosizioniRistornate.vb" />
+    <Compile Include="LazyLoadPreferenze.vb" />
+    <Compile Include="LazyLoadProfileForRole.vb" />
+    <Compile Include="LazyLoadReferente.vb" />
+    <Compile Include="LazyLoadRolesByProfile.vb" />
+    <Compile Include="LazyLoadSediOperative.vb" />
+    <Compile Include="LazyLoadTessere.vb" />
+    <Compile Include="LazyLoadUserForRole.vb" />
+    <Compile Include="LazyLoadUtente.vb" />
+    <Compile Include="MapperAbilita.vb" />
+    <Compile Include="MapperCausaleComunicazione.vb" />
+    <Compile Include="MapperComunicazione.vb" />
+    <Compile Include="MapperElectronicDocumentAzienda.vb" />
+    <Compile Include="MapperElectronicDocumentDTO.vb" />
+    <Compile Include="MapperElectronicDocumentSegreteria.vb" />
+    <Compile Include="MapperElectronicDocumentUtente.vb" />
+    <Compile Include="MapperFenealgestSoftwareInfo.vb" />
+    <Compile Include="MapperFiglio.vb" />
+    <Compile Include="MapperFondo.vb" />
+    <Compile Include="MapperImportExport.vb" />
+    <Compile Include="MapperIncarico.vb" />
+    <Compile Include="MapperIncaricoDTO.vb" />
+    <Compile Include="MapperIncassoQuotaPrevisionale.vb" />
+    <Compile Include="MapperIscrittoDTO.vb" />
+    <Compile Include="MapperKnowHow.vb" />
+    <Compile Include="MapperAzienda.vb" />
+    <Compile Include="MapperCausaleRevocaDelega.vb" />
+    <Compile Include="MapperCausaleSottoscrizioneDelega.vb" />
+    <Compile Include="MapperComune.vb" />
+    <Compile Include="MapperConto.vb" />
+    <Compile Include="MapperContratto.vb" />
+    <Compile Include="MapperDelega.vb" />
+    <Compile Include="MapperEnteBilaterale.vb" />
+    <Compile Include="MapperEventi.vb" />
+    <Compile Include="MapperIncassoQuotaAssociativa.vb" />
+    <Compile Include="MapperIncassoQuotaVertenza.vb" />
+    <Compile Include="MapperIncassoQuoteInps.vb" />
+    <Compile Include="MapperInfo.vb" />
+    <Compile Include="MapperInps.vb" />
+    <Compile Include="MapperIstitutoContrattuale.vb" />
+    <Compile Include="MapperItemDocumentoContabile.vb" />
+    <Compile Include="MapperLicInfo.vb" />
+    <Compile Include="MapperListaLavoroUtenti.vb" />
+    <Compile Include="MapperLivelloAbilita.vb" />
+    <Compile Include="MapperNameFinder.vb" />
+    <Compile Include="MapperNazione.vb" />
+    <Compile Include="MapperNonIscrittoDTO.vb" />
+    <Compile Include="MapperOffertaLavoro.vb" />
+    <Compile Include="MapperOffertaLavoroItem.vb" />
+    <Compile Include="MapperPagamentoReferenti.vb" />
+    <Compile Include="MapperPermission.vb" />
+    <Compile Include="MapperPreferenza.vb" />
+    <Compile Include="MapperPrestazione.vb" />
+    <Compile Include="MapperProfile.vb" />
+    <Compile Include="MapperPropostaLavoro.vb" />
+    <Compile Include="MapperProvincia.vb" />
+    <Compile Include="MapperQuota.vb" />
+    <Compile Include="MapperReferente.vb" />
+    <Compile Include="MapperRegione.vb" />
+    <Compile Include="MapperRendiconto.vb" />
+    <Compile Include="MapperRepartoAzienda.vb" />
+    <Compile Include="MapperRole.vb" />
+    <Compile Include="MapperRoleProfile.vb" />
+    <Compile Include="MapperSedeOperativa.vb" />
+    <Compile Include="MapperSegreteria.vb" />
+    <Compile Include="MapperSettore.vb" />
+    <Compile Include="MapperTessera.vb" />
+    <Compile Include="MapperTipoComunicazione.vb" />
+    <Compile Include="MapperTipoContratto.vb" />
+    <Compile Include="MapperTipoDocumentazione.vb" />
+    <Compile Include="MapperTipoIncarico.vb" />
+    <Compile Include="MapperTipoPrestazione.vb" />
+    <Compile Include="MapperUser.vb" />
+    <Compile Include="MapperUtente.vb" />
+    <Compile Include="MapperVertenza.vb" />
+    <Compile Include="MapperWordTagger.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="PersistenceFacade.vb" />
+    <Compile Include="PersistenceMapperRegistry.vb" />
+    <Compile Include="MapperPrestazioneDTO.vb" />
+    <Compile Include="MapperVertenzaDTO.vb" />
+    <Compile Include="Scheduling\MapperCustomer.vb" />
+    <Compile Include="Scheduling\MapperDocumentType.vb" />
+    <Compile Include="Scheduling\MapperLabel.vb" />
+    <Compile Include="Scheduling\MapperMyAppointment.vb" />
+    <Compile Include="Scheduling\MapperMyTask.vb" />
+    <Compile Include="Scheduling\MapperOperator.vb" />
+    <Compile Include="Scheduling\MapperOutcome.vb" />
+    <Compile Include="Scheduling\MapperResource.vb" />
+    <Compile Include="Scheduling\MapperSoftwareInfo.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="db\FengestDB3.6.bak" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\WIN.FENGEST_ARTIFACTS.DOMAIN\WIN.FENGEST_ARTIFACTS.DOMAIN.vbproj">
+      <Project>{4CDA0A25-48A3-4B0D-B71F-2EB0A82BFD15}</Project>
+      <Name>WIN.FENGEST_ARTIFACTS.DOMAIN</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WIN.FENGEST_CONGRUITY_ENGINE.DOMAIN\WIN.FENGEST_CONGRUITY_ENGINE.DOMAIN.vbproj">
+      <Project>{7AD53DB3-DF36-4CB3-BF5A-D3695D804D80}</Project>
+      <Name>WIN.FENGEST_CONGRUITY_ENGINE.DOMAIN</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WIN.FENGEST_FINANCIAL.DOMAIN\WIN.FENGEST_FINANCIAL.DOMAIN.vbproj">
+      <Project>{56A5A4A1-5E8E-4339-8400-2F4A23D62876}</Project>
+      <Name>WIN.FENGEST_FINANCIAL.DOMAIN</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WIN.FENGEST_INTERFACES.DOMAIN\WIN.FENGEST_INTERFACES.DOMAIN.vbproj">
+      <Project>{CBF388A0-2AD1-4D7C-8F12-3D3A4FF40BF6}</Project>
+      <Name>WIN.FENGEST_INTERFACES.DOMAIN</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WIN.FENGEST_SERVICES.DOMAIN\WIN.FENGEST_SERVICES.DOMAIN.vbproj">
+      <Project>{15FC8C5D-7817-457E-8F1F-E3958C95C070}</Project>
+      <Name>WIN.FENGEST_SERVICES.DOMAIN</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="db\leggimi.txt" />
+    <Content Include="fenealgest_3.6_db\12_DB_CAUSALE_COMUNICAZIONE.sql">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="fenealgest_3.6_db\13_DB_TIPO_COMUNICAZIONE.sql">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="fenealgest_3.6_db\10_sms.sql">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="fenealgest_3.6_db\11_update_db.sql">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="fenealgest_3.6_db\1_doc_type.sql">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="fenealgest_3.6_db\2_documents.sql">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="fenealgest_3.6_db\3_update_db.sql">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="fenealgest_3.6_db\4_last_protocol.sql">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="fenealgest_3.6_db\5_app_operators.sql">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="fenealgest_3.6_db\6_practice_Type.sql">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="fenealgest_3.6_db\7_practices.sql">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="fenealgest_3.6_db\8_practice_details.sql">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="fenealgest_3.6_db\9_practice_events.sql">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="fenealgest_3.7_db\DB_CANTIERE.sql">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="fenealgest_3.7_db\DB_CANTIERE_alter.sql">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="fenealgest_3.7_db\update_db.sql">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="fenealgest_3.8_db\1db_deleghe_utente.sql">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="fenealgest_3.8_db\updatedb.sql.sql">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="fenealgest_4.0\1_DB_PRATICHE.sql" />
+    <Content Include="fenealgest_4.0\updatedb.sql">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="reindexDBScript.txt" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

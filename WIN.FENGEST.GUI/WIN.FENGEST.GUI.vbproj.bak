@@ -1,0 +1,3324 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6668DFFD-428C-4F6E-AFFF-8A7A2C7C95AD}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>WIN.GUI.APPLICATION.PRESENTATION</RootNamespace>
+    <AssemblyName>WIN.FENGEST.GUI</AssemblyName>
+    <MyType>WindowsFormsWithCustomSubMain</MyType>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <StartupObject>Sub Main</StartupObject>
+    <ApplicationIcon>Initializzation\Fenealgest.ico</ApplicationIcon>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Shared, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="DevExpress.Printing.v11.1.Core, Version=11.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Data.v11.1, Version=11.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v11.1, Version=11.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraBars.v11.1, Version=11.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v11.1, Version=11.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraGrid.v11.1, Version=11.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraLayout.v11.1, Version=11.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraPrinting.v11.1, Version=11.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.RichEdit.v11.1.Core, Version=11.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraRichEdit.v11.1, Version=11.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraTreeList.v11.1, Version=11.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="FileDirectoryProvider.Control, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\WIN.EXTERNAL_COMPONENTS\FileDirectoryProvider.Control.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data, Version=6.2.3.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\WIN.EXTERNAL_COMPONENTS\MySql.Data.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WIN.TECHNICAL.GUI.COMMONS">
+      <HintPath>..\WIN.EXTERNAL_COMPONENTS\WIN.TECHNICAL.GUI.COMMONS.dll</HintPath>
+    </Reference>
+    <Reference Include="WIN.TECHNICAL.MIDDLEWARE, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\WIN.EXTERNAL_COMPONENTS\WIN.TECHNICAL.MIDDLEWARE.dll</HintPath>
+    </Reference>
+    <Reference Include="WIN.TECHNICAL.VB.GUI.UTILITY">
+      <HintPath>..\WIN.EXTERNAL_COMPONENTS\WIN.TECHNICAL.VB.GUI.UTILITY.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="WIN.APPLICATION" />
+    <Import Include="WIN.APPLICATION.ADMINISTRATION" />
+    <Import Include="WIN.APPLICATION.AZIENDE" />
+    <Import Include="WIN.APPLICATION.CONTI" />
+    <Import Include="WIN.APPLICATION.FINANCIAL_ARTIFACTS" />
+    <Import Include="WIN.APPLICATION.IMPORT_EXPORT_SERVICES" />
+    <Import Include="WIN.BASEREUSE" />
+    <Import Include="WIN.DOMAIN" />
+    <Import Include="WIN.DOMAIN.FEDERATIONARTIFACTS" />
+    <Import Include="WIN.DOMAIN.FED_SERVICES" />
+    <Import Include="WIN.GUI" />
+    <Import Include="WIN.GUI.APPLICATION" />
+    <Import Include="WIN.GUI.APPLICATION.PRESENTATION" />
+    <Import Include="WIN.GUI.APPLICATION.PRESENTATION.My" />
+    <Import Include="WIN.GUI.PRINT" />
+    <Import Include="WIN.GUI.UTILITY" />
+    <Import Include="WIN.PERSISTENCE" />
+    <Import Include="WIN.SECURITY" />
+    <Import Include="WIN.SECURITY.Attributes" />
+    <Import Include="WIN.TECHNICAL" />
+    <Import Include="WIN.TECHNICAL.GUI" />
+    <Import Include="WIN.TECHNICAL.GUI.COMMONS" />
+    <Import Include="WIN.TECHNICAL.MIDDLEWARE" />
+    <Import Include="WIN.TECHNICAL.PERSISTENCE" />
+    <Import Include="Wizard" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Applicazione.vb" />
+    <Compile Include="AsyncNotifier.vb" />
+    <Compile Include="Controls\Financial\ControlPagamentoQuotePrevisionali.Designer.vb">
+      <DependentUpon>ControlPagamentoQuotePrevisionali.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Financial\ControlPagamentoQuotePrevisionali.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Financial\FinancialDocumentPrintHelper.vb" />
+    <Compile Include="Controls\Reports\ControlPrepareReportIncarichi.Designer.vb">
+      <DependentUpon>ControlPrepareReportIncarichi.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Reports\ControlPrepareReportIncarichi.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Reports\ControlPrepareRptdocumenti.Designer.vb">
+      <DependentUpon>ControlPrepareRptdocumenti.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Reports\ControlPrepareRptdocumenti.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Reports\ControlPrepareRptIscrittiDTO.Designer.vb">
+      <DependentUpon>ControlPrepareRptIscrittiDTO.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Reports\ControlPrepareRptIscrittiDTO.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Reports\ControlPrepareRptLibDTO.Designer.vb">
+      <DependentUpon>ControlPrepareRptLibDTO.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Reports\ControlPrepareRptLibDTO.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Reports\ReportDocumenti.Designer.vb">
+      <DependentUpon>ReportDocumenti.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Reports\ReportDocumenti.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Reports\ReportIncarichi.Designer.vb">
+      <DependentUpon>ReportIncarichi.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Reports\ReportIncarichi.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Reports\ReportLiberiDTO.Designer.vb">
+      <DependentUpon>ReportLiberiDTO.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Reports\ReportLiberiDTO.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Reports\ReportIscrittiDTO.Designer.vb">
+      <DependentUpon>ReportIscrittiDTO.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Reports\ReportIscrittiDTO.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Segreteria\ControlAnagraficaAvvocato.Designer.vb">
+      <DependentUpon>ControlAnagraficaAvvocato.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Segreteria\ControlAnagraficaAvvocato.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\SetUp\ControlFondi.Designer.vb">
+      <DependentUpon>ControlFondi.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\SetUp\ControlFondi.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Segreteria\ControlSegreteria.Designer.vb">
+      <DependentUpon>ControlSegreteria.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Segreteria\ControlSegreteria.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\SetUp\ControlTipoDocumentazione.Designer.vb">
+      <DependentUpon>ControlTipoDocumentazione.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\SetUp\ControlTipoDocumentazione.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Utenti\CompilazioneModelli\ControlCompilazioneModelli1.Designer.vb">
+      <DependentUpon>ControlCompilazioneModelli1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Utenti\CompilazioneModelli\ControlCompilazioneModelli1.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Utenti\ListeLavoro\ControlSelezioneComponentiLista.Designer.vb">
+      <DependentUpon>ControlSelezioneComponentiLista.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Utenti\ListeLavoro\ControlSelezioneComponentiLista.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Utenti\ReportRiepilogativoUtente.vb" />
+    <Compile Include="FormMembers\ArchiviDocumentaliLoaders\ArchivioInitializers\ArchivioInitializerFactory.vb" />
+    <Compile Include="FormMembers\ArchiviDocumentaliLoaders\ArchivioInitializers\IInitializeFormArchivio.vb" />
+    <Compile Include="FormMembers\ArchiviDocumentaliLoaders\ArchivioInitializers\InizializatoreArchivioUtenti.vb" />
+    <Compile Include="FormMembers\ArchiviDocumentaliLoaders\ArchivioInitializers\InizializzatoreArchivioAzienda.vb" />
+    <Compile Include="FormMembers\ArchiviDocumentaliLoaders\ArchivioInitializers\InizializzatoreArchivioSegreteria.vb" />
+    <Compile Include="FormMembers\ArchiviDocumentaliLoaders\FrmDeleteElectronicDocument.Designer.vb">
+      <DependentUpon>FrmDeleteElectronicDocument.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormMembers\ArchiviDocumentaliLoaders\FrmDeleteElectronicDocument.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMembers\ArchiviDocumentaliLoaders\FrmDocumentoElettronico.Designer.vb">
+      <DependentUpon>FrmDocumentoElettronico.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormMembers\ArchiviDocumentaliLoaders\FrmDocumentoElettronico.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMembers\ArchiviDocumentaliLoaders\FrmRinominaFile.Designer.vb">
+      <DependentUpon>FrmRinominaFile.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormMembers\ArchiviDocumentaliLoaders\FrmRinominaFile.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMembers\FrmCacolatoreCF.Designer.vb">
+      <DependentUpon>FrmCacolatoreCF.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormMembers\FrmCacolatoreCF.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMembers\FrmCambiaPassword.Designer.vb">
+      <DependentUpon>FrmCambiaPassword.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormMembers\FrmCambiaPassword.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMembers\FrmDatiFiscali.Designer.vb">
+      <DependentUpon>FrmDatiFiscali.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormMembers\FrmDatiFiscali.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMembers\FrmExportData.Designer.vb">
+      <DependentUpon>FrmExportData.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormMembers\FrmExportData.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMembers\FrmExportIndex.Designer.vb">
+      <DependentUpon>FrmExportIndex.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormMembers\FrmExportIndex.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMembers\FrmImportExport.Designer.vb">
+      <DependentUpon>FrmImportExport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormMembers\FrmImportExport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMembers\Rendiconti\FrmCreaRendiconto.Designer.vb">
+      <DependentUpon>FrmCreaRendiconto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormMembers\Rendiconti\FrmCreaRendiconto.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMembers\Rendiconti\FrmCreateRendiconto.Designer.vb">
+      <DependentUpon>FrmCreateRendiconto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormMembers\Rendiconti\FrmCreateRendiconto.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMembers\Rendiconti\FrmViewRendiconti.Designer.vb">
+      <DependentUpon>FrmViewRendiconti.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormMembers\Rendiconti\FrmViewRendiconti.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMembers\Rendiconti\FrmViewRendiconto.Designer.vb">
+      <DependentUpon>FrmViewRendiconto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormMembers\Rendiconti\FrmViewRendiconto.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMembers\Servizi\Deleghe\FrmBozzaDelega.Designer.vb">
+      <DependentUpon>FrmBozzaDelega.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormMembers\Servizi\Deleghe\FrmBozzaDelega.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMembers\Servizi\Deleghe\FrmGeneraDeleghe.Designer.vb">
+      <DependentUpon>FrmGeneraDeleghe.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormMembers\Servizi\Deleghe\FrmGeneraDeleghe.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMembers\Servizi\Deleghe\FrmMagazzinoDeleghe.Designer.vb">
+      <DependentUpon>FrmMagazzinoDeleghe.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormMembers\Servizi\Deleghe\FrmMagazzinoDeleghe.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMembers\Utenti\Compilazione Modelli\FrmCompilazioneModello.Designer.vb">
+      <DependentUpon>FrmCompilazioneModello.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormMembers\Utenti\Compilazione Modelli\FrmCompilazioneModello.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMembers\Utenti\Compilazione Modelli\FrmSelezionaModello.Designer.vb">
+      <DependentUpon>FrmSelezionaModello.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormMembers\Utenti\Compilazione Modelli\FrmSelezionaModello.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMembers\Utenti\Comunicazioni\FrmComunicazioniMassiveWizard.Designer.vb">
+      <DependentUpon>FrmComunicazioniMassiveWizard.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormMembers\Utenti\Comunicazioni\FrmComunicazioniMassiveWizard.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMembers\Utenti\Comunicazioni\FrmSelezioneIndiceLista.Designer.vb">
+      <DependentUpon>FrmSelezioneIndiceLista.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormMembers\Utenti\Comunicazioni\FrmSelezioneIndiceLista.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMembers\Utenti\Incarichi\FrmEtichietteAziende.Designer.vb">
+      <DependentUpon>FrmEtichietteAziende.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormMembers\Utenti\Incarichi\FrmEtichietteAziende.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMembers\Utenti\Incarichi\FrmStampaPermessi.Designer.vb">
+      <DependentUpon>FrmStampaPermessi.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormMembers\Utenti\Incarichi\FrmStampaPermessi.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMembers\Utenti\InfoUtenti\FrmIncarichi.Designer.vb">
+      <DependentUpon>FrmIncarichi.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormMembers\Utenti\InfoUtenti\FrmIncarichi.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMembers\Utenti\ListeLavoro\FrmConfrontoListeLavoro.Designer.vb">
+      <DependentUpon>FrmConfrontoListeLavoro.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormMembers\Utenti\ListeLavoro\FrmConfrontoListeLavoro.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMembers\Utenti\ListeLavoro\FrmConfrontoListeWizard.Designer.vb">
+      <DependentUpon>FrmConfrontoListeWizard.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormMembers\Utenti\ListeLavoro\FrmConfrontoListeWizard.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMembers\Utenti\ListeLavoro\FrmDocumentoToListaLavoro.Designer.vb">
+      <DependentUpon>FrmDocumentoToListaLavoro.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormMembers\Utenti\ListeLavoro\FrmDocumentoToListaLavoro.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMembers\Utenti\ListeLavoro\FrmExportEtichette.Designer.vb">
+      <DependentUpon>FrmExportEtichette.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormMembers\Utenti\ListeLavoro\FrmExportEtichette.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMembers\Utenti\ListeLavoro\FrmExportLista.Designer.vb">
+      <DependentUpon>FrmExportLista.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormMembers\Utenti\ListeLavoro\FrmExportLista.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMembers\Utenti\ListeLavoro\FrmReportDelegheToListaLavoro.Designer.vb">
+      <DependentUpon>FrmReportDelegheToListaLavoro.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormMembers\Utenti\ListeLavoro\FrmReportDelegheToListaLavoro.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMembers\Utenti\ListeLavoro\FrmReportIQToListaLavoro.Designer.vb">
+      <DependentUpon>FrmReportIQToListaLavoro.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormMembers\Utenti\ListeLavoro\FrmReportIQToListaLavoro.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMembers\Utenti\ListeLavoro\FrmReportIscrittiToListaLavoro.Designer.vb">
+      <DependentUpon>FrmReportIscrittiToListaLavoro.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormMembers\Utenti\ListeLavoro\FrmReportIscrittiToListaLavoro.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMembers\Utenti\ListeLavoro\FrmReportLiberiToListaLavoro.Designer.vb">
+      <DependentUpon>FrmReportLiberiToListaLavoro.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormMembers\Utenti\ListeLavoro\FrmReportLiberiToListaLavoro.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMembers\Utenti\ListeLavoro\FrmSelezionaListaLavoro.Designer.vb">
+      <DependentUpon>FrmSelezionaListaLavoro.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormMembers\Utenti\ListeLavoro\FrmSelezionaListaLavoro.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMembers\Utenti\ListeLavoro\FrmSelezionaTipoConversione.Designer.vb">
+      <DependentUpon>FrmSelezionaTipoConversione.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormMembers\Utenti\ListeLavoro\FrmSelezionaTipoConversione.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMembers\Utenti\RiepiloghiUtente\GridAttivitaInitializers.vb" />
+    <Compile Include="FormMembers\Utenti\RiepiloghiUtente\TreeViewAttivitaLoaders.vb" />
+    <Compile Include="GridLoaderMembers\GridInitializerRptIQ.vb" />
+    <Compile Include="GridLoaderMembers\GridInitializerRptIscritti.vb" />
+    <Compile Include="GridLoaderMembers\GridInitializerRptLiberi.vb" />
+    <Compile Include="GridLoaderMembers\GridInitializerRptLiberiDTO.vb" />
+    <Compile Include="GridLoaderMembers\GridLoaderListaLavoro.vb" />
+    <Compile Include="GridLoaderMembers\GridLoaderNewIQP.vb" />
+    <Compile Include="GridLoaderMembers\GridLoaderRptIscrittiDTO.vb" />
+    <Compile Include="GridLoaderMembers\GridLoaderRptLiberiDTO.vb" />
+    <Compile Include="GridLoaderMembers\GridLoaderViewIQP.vb" />
+    <Compile Include="GridLoaderMembers\GridsLoader.vb" />
+    <Compile Include="FormMembers\ArchiviDocumentaliLoaders\GridInitializers.vb" />
+    <Compile Include="FormMembers\ArchiviDocumentaliLoaders\TreeViewsLoader.vb" />
+    <Compile Include="FormMembers\ArchiviDocumentaliLoaders\FrmAllegaFile.Designer.vb">
+      <DependentUpon>FrmAllegaFile.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormMembers\ArchiviDocumentaliLoaders\FrmAllegaFile.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMembers\ArchiviDocumentaliLoaders\FrmArchivioDocumentale.Designer.vb">
+      <DependentUpon>FrmArchivioDocumentale.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormMembers\ArchiviDocumentaliLoaders\FrmArchivioDocumentale.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMembers\Utenti\InfoUtenti\FrmFiglio.Designer.vb">
+      <DependentUpon>FrmFiglio.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormMembers\Utenti\InfoUtenti\FrmFiglio.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMembers\Servizi\Prestazoni\FrmImportaPrestazioni.Designer.vb">
+      <DependentUpon>FrmImportaPrestazioni.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormMembers\Servizi\Prestazoni\FrmImportaPrestazioni.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMembers\Segreteria\Tessere\FrmOptStampaTessere.Designer.vb">
+      <DependentUpon>FrmOptStampaTessere.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormMembers\Segreteria\Tessere\FrmOptStampaTessere.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMembers\Servizi\Deleghe\FrmTransioniDeleghe.Designer.vb">
+      <DependentUpon>FrmTransioniDeleghe.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormMembers\Servizi\Deleghe\FrmTransioniDeleghe.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMembers\Servizi\Deleghe\FrmVisualizzatoreDeleghe.Designer.vb">
+      <DependentUpon>FrmVisualizzatoreDeleghe.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormMembers\Servizi\Deleghe\FrmVisualizzatoreDeleghe.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMembers\Utenti\RiepiloghiUtente\FrmRiepilogoAttivita.Designer.vb">
+      <DependentUpon>FrmRiepilogoAttivita.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormMembers\Utenti\RiepiloghiUtente\FrmRiepilogoAttivita.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmInformazioni.Designer.vb">
+      <DependentUpon>FrmInformazioni.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmInformazioni.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\Utenti\ControlListaLavoro.Designer.vb">
+      <DependentUpon>ControlListaLavoro.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Utenti\ControlListaLavoro.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\SetUp\ControlCausaleComunicazione.Designer.vb">
+      <DependentUpon>ControlCausaleComunicazione.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\SetUp\ControlCausaleComunicazione.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Utenti\Comunicazioni\ControlComunicazione.Designer.vb">
+      <DependentUpon>ControlComunicazione.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Utenti\Comunicazioni\ControlComunicazione.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\SetUp\ControlAbilita.Designer.vb">
+      <DependentUpon>ControlAbilita.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\SetUp\ControlAbilita.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Domande_Offerte\ControlAnalisiDomandaLavoro.Designer.vb">
+      <DependentUpon>ControlAnalisiDomandaLavoro.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Domande_Offerte\ControlAnalisiDomandaLavoro.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Domande_Offerte\ControlAnalisiOffertaLavoro.Designer.vb">
+      <DependentUpon>ControlAnalisiOffertaLavoro.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Domande_Offerte\ControlAnalisiOffertaLavoro.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Utenti\Comunicazioni\ControlComunicazioneMassiva.Designer.vb">
+      <DependentUpon>ControlComunicazioneMassiva.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Utenti\Comunicazioni\ControlComunicazioneMassiva.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\SetUp\ControlLivelloAbilita.Designer.vb">
+      <DependentUpon>ControlLivelloAbilita.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\SetUp\ControlLivelloAbilita.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Domande_Offerte\ControlOffertaLavoro.Designer.vb">
+      <DependentUpon>ControlOffertaLavoro.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Domande_Offerte\ControlOffertaLavoro.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Domande_Offerte\ControlPropostaLavoro.Designer.vb">
+      <DependentUpon>ControlPropostaLavoro.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Domande_Offerte\ControlPropostaLavoro.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\SetUp\ControlTipoComunicazione.Designer.vb">
+      <DependentUpon>ControlTipoComunicazione.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\SetUp\ControlTipoComunicazione.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Domande_Offerte\ControlVisualizzatoreOfferte.Designer.vb">
+      <DependentUpon>ControlVisualizzatoreOfferte.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Domande_Offerte\ControlVisualizzatoreOfferte.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Domande_Offerte\ControlVisualizzatoreProposte.Designer.vb">
+      <DependentUpon>ControlVisualizzatoreProposte.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Domande_Offerte\ControlVisualizzatoreProposte.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Utenti\Comunicazioni\ControlVisualizzatoreComunicazioni.Designer.vb">
+      <DependentUpon>ControlVisualizzatoreComunicazioni.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Utenti\Comunicazioni\ControlVisualizzatoreComunicazioni.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Reports\ControlPrepareRptPrestazioni.Designer.vb">
+      <DependentUpon>ControlPrepareRptPrestazioni.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Reports\ControlPrepareRptPrestazioni.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Reports\ControlPrepareRptDeleghe.Designer.vb">
+      <DependentUpon>ControlPrepareRptDeleghe.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Reports\ControlPrepareRptDeleghe.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Reports\ControlPrepareRptLib.Designer.vb">
+      <DependentUpon>ControlPrepareRptLib.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Reports\ControlPrepareRptLib.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Reports\ControlPrepareRptVertenze.Designer.vb">
+      <DependentUpon>ControlPrepareRptVertenze.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Reports\ControlPrepareRptVertenze.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Reports\ReportDeleghe.Designer.vb">
+      <DependentUpon>ReportDeleghe.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Reports\ReportDeleghe.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Reports\ReportLiberi.Designer.vb">
+      <DependentUpon>ReportLiberi.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Reports\ReportLiberi.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Utenti\Prestazioni\ControlVisualizzatorePrestazioni.Designer.vb">
+      <DependentUpon>ControlVisualizzatorePrestazioni.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Utenti\Prestazioni\ControlVisualizzatorePrestazioni.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Reports\ReportPrestazioni.Designer.vb">
+      <DependentUpon>ReportPrestazioni.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Reports\ReportPrestazioni.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Reports\ReportVertenze.Designer.vb">
+      <DependentUpon>ReportVertenze.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Reports\ReportVertenze.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FormMembers\Utenti\InfoUtenti\FrmInfos.Designer.vb">
+      <DependentUpon>FrmInfos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormMembers\Utenti\InfoUtenti\FrmInfos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMembers\Segreteria\FrmIscritti.Designer.vb">
+      <DependentUpon>FrmIscritti.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormMembers\Segreteria\FrmIscritti.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMembers\Servizi\Financial\FrmItemOfferta.Designer.vb">
+      <DependentUpon>FrmItemOfferta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormMembers\Servizi\Financial\FrmItemOfferta.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMembers\Utenti\ListeLavoro\FrmListaLavoro.Designer.vb">
+      <DependentUpon>FrmListaLavoro.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormMembers\Utenti\ListeLavoro\FrmListaLavoro.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMembers\Utenti\RiepiloghiUtente\FrmQuoteUtente.Designer.vb">
+      <DependentUpon>FrmQuoteUtente.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormMembers\Utenti\RiepiloghiUtente\FrmQuoteUtente.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMembers\FrmSelectPrinter.Designer.vb">
+      <DependentUpon>FrmSelectPrinter.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormMembers\FrmSelectPrinter.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMembers\Utenti\InfoUtenti\FrmSituazioneFamiliare.Designer.vb">
+      <DependentUpon>FrmSituazioneFamiliare.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormMembers\Utenti\InfoUtenti\FrmSituazioneFamiliare.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMembers\FrmTagSupplementari.Designer.vb">
+      <DependentUpon>FrmTagSupplementari.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormMembers\FrmTagSupplementari.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GridLoaderMembers\GridLoaderElaborazioniMassiveDeleghe.vb" />
+    <Compile Include="GridLoaderMembers\GridLoaderRptDeleghe.vb" />
+    <Compile Include="GridLoaderMembers\GridLoaderRptLiberi.vb" />
+    <Compile Include="GridLoaderMembers\GridLoaderRptPrestazioni.vb" />
+    <Compile Include="GridLoaderMembers\GridLoaderRptVertenze.vb" />
+    <Compile Include="Initializzation\CreazioneDocumenti\OpenNewPagamentoCommand.vb" />
+    <Compile Include="Initializzation\CreazioneDocumenti\OpenNewPagamentoInpsCommand.vb" />
+    <Compile Include="Initializzation\CreazioneDocumenti\OpenNewPagamentoPrevisionaleCommand.vb" />
+    <Compile Include="Initializzation\CreazioneDocumenti\OpenNewPagamentoVertenzaCommand.vb" />
+    <Compile Include="Initializzation\CreazioneDocumenti\OpenNewRistorno.vb" />
+    <Compile Include="CrystalReport1.vb">
+      <DependentUpon>CrystalReport1.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Initializzation\Inizializzazione\InizializzatoreComandi.vb" />
+    <Compile Include="Initializzation\Inizializzazione\InizializzatoreL.vb" />
+    <Compile Include="Initializzation\Inizializzazione\InizializzatoreSicurezza.vb" />
+    <Compile Include="Initializzation\Inizializzazione\InizializzazioneGeoHandler.vb" />
+    <Compile Include="Initializzation\OpenAnagrafiche\CreazioneAnagrafiche\OpenNewAnagraficaAvvocatoCommand.vb" />
+    <Compile Include="Initializzation\OpenAnagrafiche\CreazioneAnagrafiche\OpenNewAnagraficaAziendaCommand.vb" />
+    <Compile Include="Initializzation\OpenAnagrafiche\CreazioneAnagrafiche\OpenNewAnagraficaContoCommand.vb" />
+    <Compile Include="Initializzation\OpenAnagrafiche\CreazioneAnagrafiche\OpenNewAnagraficaReferenteCommand.vb" />
+    <Compile Include="Initializzation\OpenAnagrafiche\CreazioneAnagrafiche\OpenNewAnagraficaUtenteCommand.vb.vb" />
+    <Compile Include="Initializzation\OpenAnagrafiche\OpenAnagraficaAvvocatoCommand.vb" />
+    <Compile Include="Initializzation\OpenAnagrafiche\OpenAnagraficaAziendaCommand.vb" />
+    <Compile Include="Initializzation\OpenAnagrafiche\OpenAnagraficaContoCommand.vb" />
+    <Compile Include="Initializzation\OpenAnagrafiche\OpenAnagraficaReferenteCommand.vb" />
+    <Compile Include="Initializzation\OpenAnagrafiche\OpenAnagraficaUtenteCommand.vb" />
+    <Compile Include="Initializzation\OpenCommand.vb" />
+    <Compile Include="Initializzation\OpenCommandFactory.vb" />
+    <Compile Include="Initializzation\OpenHomePageCommand.vb" />
+    <Compile Include="Initializzation\OpenReports\PreparazioneReport\OpenPrepareReportArchivio.vb" />
+    <Compile Include="Initializzation\OpenReports\PreparazioneReport\OpenPrepareReportDeleghe.vb" />
+    <Compile Include="Initializzation\OpenReports\PreparazioneReport\OpenPrepareReportIncarichi.vb" />
+    <Compile Include="Initializzation\OpenReports\PreparazioneReport\OpenPrepareRptIQ.vb" />
+    <Compile Include="Initializzation\OpenReports\PreparazioneReport\OpenPrepareRptIscritti.vb" />
+    <Compile Include="Initializzation\OpenReports\PreparazioneReport\OpenPrepareRptIscrittiDTO.vb" />
+    <Compile Include="Initializzation\OpenReports\PreparazioneReport\OpenPrepareRptLiberi.vb" />
+    <Compile Include="Initializzation\OpenReports\PreparazioneReport\OpenPrepareRptLiberiDTO.vb" />
+    <Compile Include="Initializzation\OpenReports\PreparazioneReport\OpenPrepareRptPrestazioni.vb" />
+    <Compile Include="Initializzation\OpenReports\PreparazioneReport\OpenPrepareRptVertenze.vb" />
+    <Compile Include="Initializzation\OpenReports\VisualizzazioneReports\OpenReportArchivio.vb" />
+    <Compile Include="Initializzation\OpenReports\VisualizzazioneReports\OpenReportSaldiContoCommand.vb" />
+    <Compile Include="Initializzation\OpenReports\VisualizzazioneReports\OpenRptDeleghe.vb" />
+    <Compile Include="Initializzation\OpenReports\VisualizzazioneReports\OpenRptIncarichi.vb" />
+    <Compile Include="Initializzation\OpenReports\VisualizzazioneReports\OpenRptIQ.vb" />
+    <Compile Include="Initializzation\OpenReports\VisualizzazioneReports\OpenRptIscritti.vb" />
+    <Compile Include="Initializzation\OpenReports\VisualizzazioneReports\OpenRptIscrittiDTO.vb" />
+    <Compile Include="Initializzation\OpenReports\VisualizzazioneReports\OpenRptLiberi.vb" />
+    <Compile Include="Initializzation\OpenReports\VisualizzazioneReports\OpenRptLiberiDTO.vb" />
+    <Compile Include="Initializzation\OpenReports\VisualizzazioneReports\OpenRptPrestazioni.vb" />
+    <Compile Include="Initializzation\OpenReports\VisualizzazioneReports\OpenRptVertenze.vb" />
+    <Compile Include="Initializzation\OpenServices\CreazioneServizi\OpenNewComunicazioneCommand.vb" />
+    <Compile Include="Initializzation\OpenServices\CreazioneServizi\OpenNewDelegaCommand.vb" />
+    <Compile Include="Initializzation\OpenServices\CreazioneServizi\OpenNewListaLavoroCommand.vb" />
+    <Compile Include="Initializzation\OpenServices\CreazioneServizi\OpenNewOffertaCommand.vb" />
+    <Compile Include="Initializzation\OpenServices\CreazioneServizi\OpenNewPrestazioneCommand.vb" />
+    <Compile Include="Initializzation\OpenServices\CreazioneServizi\OpenNewPropostaCommand.vb" />
+    <Compile Include="Initializzation\OpenServices\CreazioneServizi\OpenNewTipoPrestazioneCommand.vb" />
+    <Compile Include="Initializzation\OpenServices\CreazioneServizi\OpenNewVertenzaCommand.vb" />
+    <Compile Include="Initializzation\OpenServices\OpenAccettazioneMassivaCommand.vb" />
+    <Compile Include="Initializzation\OpenServices\OpenAnalisiDomandaCommand.vb" />
+    <Compile Include="Initializzation\OpenServices\OpenAnalisiOffertaCommand.vb" />
+    <Compile Include="Initializzation\OpenServices\OpenCompilazioneModelliCommand.vb" />
+    <Compile Include="Initializzation\OpenServices\OpenComunicazioneCommand.vb" />
+    <Compile Include="Initializzation\OpenServices\OpenComunicazioneMassivaCommand.vb" />
+    <Compile Include="Initializzation\OpenServices\OpenComunicazioniCommand.vb" />
+    <Compile Include="Initializzation\OpenServices\OpenDelegaCommand.vb" />
+    <Compile Include="Initializzation\OpenServices\OpenDelegheCommand.vb" />
+    <Compile Include="Initializzation\OpenServices\OpenDocumentoCommand.vb" />
+    <Compile Include="Initializzation\OpenServices\OpenInoltroMassivoDelegheCommand.vb" />
+    <Compile Include="Initializzation\OpenServices\OpenItemDocContabile.vb" />
+    <Compile Include="Initializzation\OpenServices\OpenListaLivoroCommand.vb" />
+    <Compile Include="Initializzation\OpenServices\OpenOffertaCommand.vb" />
+    <Compile Include="Initializzation\OpenServices\OpenOfferteCommand.vb" />
+    <Compile Include="Initializzation\OpenServices\OpenPrestazioneCommand.vb" />
+    <Compile Include="Initializzation\OpenServices\OpenPrestazioniCommand.vb" />
+    <Compile Include="Initializzation\OpenServices\OpenPropostaCommand.vb" />
+    <Compile Include="Initializzation\OpenServices\OpenProposteCommand.vb" />
+    <Compile Include="Initializzation\OpenServices\OpenVertenzaCommand.vb" />
+    <Compile Include="Initializzation\OpenServices\OpenVertenzeCommand.vb" />
+    <Compile Include="Initializzation\OpenSetup\OpenCausaleComunicazioneCommand.vb" />
+    <Compile Include="Initializzation\OpenSetup\OpenCausaliRevocaCommand.vb" />
+    <Compile Include="Initializzation\OpenSetup\OpenEnteCommand.vb" />
+    <Compile Include="Initializzation\OpenSetup\OpenFondoCommand.vb" />
+    <Compile Include="Initializzation\OpenSetup\OpenInpsCommand.vb" />
+    <Compile Include="Initializzation\OpenSetup\OpenIstitutiCommand.vb" />
+    <Compile Include="Initializzation\OpenSetup\OpenLivelloSkillCommand.vb" />
+    <Compile Include="Initializzation\OpenSetup\OpenNewTipoContrattoCommand.vb" />
+    <Compile Include="Initializzation\OpenSetup\OpenRepartiCommand.vb" />
+    <Compile Include="Initializzation\OpenSetup\OpenSegreteriaCommand.vb" />
+    <Compile Include="Initializzation\OpenSetup\OpenSettoreCommand.vb" />
+    <Compile Include="Initializzation\OpenSetup\OpenSkillCommand.vb" />
+    <Compile Include="Initializzation\OpenSetup\OpenTipoComunicazioneCommand.vb" />
+    <Compile Include="Initializzation\OpenSetup\OpenTipoContrattoCommand.vb" />
+    <Compile Include="Initializzation\OpenSetup\OpenTipoDocumentazioneCommand.vb" />
+    <Compile Include="Initializzation\OpenSetup\OpenTipoPrestazioneCommand.vb" />
+    <Compile Include="Mediators\DocumentIQPMediator.vb" />
+    <Compile Include="SearchMembers\SearchAvvocati.Designer.vb">
+      <DependentUpon>SearchAvvocati.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SearchMembers\SearchAvvocati.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SearchMembers\SearchListaUtenti.Designer.vb">
+      <DependentUpon>SearchListaUtenti.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SearchMembers\SearchListaUtenti.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SearchMembers\SearchOfferte.Designer.vb">
+      <DependentUpon>SearchOfferte.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SearchMembers\SearchOfferte.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Security\ManagerProfili.Designer.vb">
+      <DependentUpon>ManagerProfili.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Security\ManagerProfili.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Security\ManagerRuoli.designer.vb">
+      <DependentUpon>ManagerRuoli.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Security\ManagerRuoli.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Security\ProfileDescriptorForm.Designer.vb">
+      <DependentUpon>ProfileDescriptorForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Security\ProfileDescriptorForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Security\ProfileListForm.Designer.vb">
+      <DependentUpon>ProfileListForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Security\ProfileListForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Security\uxLogonForm.Designer.vb">
+      <DependentUpon>uxLogonForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Security\uxLogonForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Security\uxUserForm.Designer.vb">
+      <DependentUpon>uxUserForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Security\uxUserForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Utils\AbstractBrowserControl.Designer.vb">
+      <DependentUpon>AbstractBrowserControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Utils\AbstractBrowserControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Deleghe\ApplicationController.vb" />
+    <Compile Include="Utils\CircleButton.Designer.vb">
+      <DependentUpon>CircleButton.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Utils\CircleButton.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Deleghe\ControlAccettazioneDelega.Designer.vb">
+      <DependentUpon>ControlAccettazioneDelega.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Deleghe\ControlAccettazioneDelega.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Segreteria\Aziende\ControlAnagraficaAzienda.Designer.vb">
+      <DependentUpon>ControlAnagraficaAzienda.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Segreteria\Aziende\ControlAnagraficaAzienda.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\SetUp\ControlAnagraficaConto.Designer.vb">
+      <DependentUpon>ControlAnagraficaConto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\SetUp\ControlAnagraficaConto.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Segreteria\ControlAnagraficaReferente.Designer.vb">
+      <DependentUpon>ControlAnagraficaReferente.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Segreteria\ControlAnagraficaReferente.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Utenti\ControlAnagraficaUtente.Designer.vb">
+      <DependentUpon>ControlAnagraficaUtente.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Utenti\ControlAnagraficaUtente.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\SetUp\ControlCausaliRevoca.Designer.vb">
+      <DependentUpon>ControlCausaliRevoca.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\SetUp\ControlCausaliRevoca.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Deleghe\ControlDelega.Designer.vb">
+      <DependentUpon>ControlDelega.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Deleghe\ControlDelega.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Deleghe\ControlDelegaAccettata.Designer.vb">
+      <DependentUpon>ControlDelegaAccettata.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Deleghe\ControlDelegaAccettata.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Deleghe\ControlDelegaAnnullata.Designer.vb">
+      <DependentUpon>ControlDelegaAnnullata.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Deleghe\ControlDelegaAnnullata.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Deleghe\ControlDelegaAttiva.Designer.vb">
+      <DependentUpon>ControlDelegaAttiva.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Deleghe\ControlDelegaAttiva.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Deleghe\ControlDelegaInoltrata.Designer.vb">
+      <DependentUpon>ControlDelegaInoltrata.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Deleghe\ControlDelegaInoltrata.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Deleghe\ControlDelegaRevocata.Designer.vb">
+      <DependentUpon>ControlDelegaRevocata.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Deleghe\ControlDelegaRevocata.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Financial\ControlDocumentView.Designer.vb">
+      <DependentUpon>ControlDocumentView.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Financial\ControlDocumentView.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Segreteria\ControlEnteBilaterale.Designer.vb">
+      <DependentUpon>ControlEnteBilaterale.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Segreteria\ControlEnteBilaterale.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ControlHomePage.Designer.vb">
+      <DependentUpon>ControlHomePage.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ControlHomePage.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Deleghe\ControlInoltroDelega.Designer.vb">
+      <DependentUpon>ControlInoltroDelega.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Deleghe\ControlInoltroDelega.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\SetUp\ControlInps.Designer.vb">
+      <DependentUpon>ControlInps.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\SetUp\ControlInps.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\SetUp\ControlIstituti.Designer.vb">
+      <DependentUpon>ControlIstituti.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\SetUp\ControlIstituti.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Financial\ControlItemContabile.Designer.vb">
+      <DependentUpon>ControlItemContabile.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Financial\ControlItemContabile.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Utils\ControlloListeIDs.Designer.vb">
+      <DependentUpon>ControlloListeIDs.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Utils\ControlloListeIDs.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Utils\ControlloSelezioneCompetenza.Designer.vb">
+      <DependentUpon>ControlloSelezioneCompetenza.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Utils\ControlloSelezioneCompetenza.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Utils\ControlloselezioneDataRange.Designer.vb">
+      <DependentUpon>ControlloselezioneDataRange.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Utils\ControlloselezioneDataRange.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Financial\ControlPagamentoQuoteAssociative.Designer.vb">
+      <DependentUpon>ControlPagamentoQuoteAssociative.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Financial\ControlPagamentoQuoteAssociative.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Financial\ControlPagamentoQuoteInps.Designer.vb">
+      <DependentUpon>ControlPagamentoQuoteInps.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Financial\ControlPagamentoQuoteInps.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Financial\ControlPagamentoQuoteVertenza.Designer.vb">
+      <DependentUpon>ControlPagamentoQuoteVertenza.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Financial\ControlPagamentoQuoteVertenza.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Financial\ControlPagamentoReferenti.Designer.vb">
+      <DependentUpon>ControlPagamentoReferenti.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Financial\ControlPagamentoReferenti.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Reports\ControlPrepareRptIQ.Designer.vb">
+      <DependentUpon>ControlPrepareRptIQ.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Reports\ControlPrepareRptIQ.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Reports\ControlPrepareRptIscritti.Designer.vb">
+      <DependentUpon>ControlPrepareRptIscritti.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Reports\ControlPrepareRptIscritti.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Utenti\Prestazioni\ControlPrestazioni.Designer.vb">
+      <DependentUpon>ControlPrestazioni.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Utenti\Prestazioni\ControlPrestazioni.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\SetUp\ControlReparti.Designer.vb">
+      <DependentUpon>ControlReparti.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\SetUp\ControlReparti.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Financial\ControlRicercheIQI.Designer.vb">
+      <DependentUpon>ControlRicercheIQI.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Financial\ControlRicercheIQI.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Financial\ControlRicerchePGR.Designer.vb">
+      <DependentUpon>ControlRicerchePGR.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Financial\ControlRicerchePGR.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Financial\ControlRicrcheIQV.Designer.vb">
+      <DependentUpon>ControlRicrcheIQV.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Financial\ControlRicrcheIQV.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Financial\ControlSaldoConto.Designer.vb">
+      <DependentUpon>ControlSaldoConto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Financial\ControlSaldoConto.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Utils\ControlSelPeriodiMensili.Designer.vb">
+      <DependentUpon>ControlSelPeriodiMensili.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Utils\ControlSelPeriodiMensili.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Segreteria\ControlSettore.Designer.vb">
+      <DependentUpon>ControlSettore.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Segreteria\ControlSettore.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Utils\ControlStackView.Designer.vb">
+      <DependentUpon>ControlStackView.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Utils\ControlStackView.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\SetUp\ControlTipoContratto.Designer.vb">
+      <DependentUpon>ControlTipoContratto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\SetUp\ControlTipoContratto.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\SetUp\ControlTipoPrestazioni.Designer.vb">
+      <DependentUpon>ControlTipoPrestazioni.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\SetUp\ControlTipoPrestazioni.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Utenti\Vertenze\ControlVertenza.Designer.vb">
+      <DependentUpon>ControlVertenza.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Utenti\Vertenze\ControlVertenza.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Deleghe\ControlVisualizzatoreDeleghe.Designer.vb">
+      <DependentUpon>ControlVisualizzatoreDeleghe.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Deleghe\ControlVisualizzatoreDeleghe.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Utenti\Vertenze\ControlVisualizzaVertenze.Designer.vb">
+      <DependentUpon>ControlVisualizzaVertenze.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Utenti\Vertenze\ControlVisualizzaVertenze.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Utils\CustomBar.Designer.vb">
+      <DependentUpon>CustomBar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Utils\CustomBar.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Deleghe\DelegheActions.Designer.vb">
+      <DependentUpon>DelegheActions.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Deleghe\DelegheActions.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mediators\DelegheMediator.vb" />
+    <Compile Include="Mediators\DocumentIQAMediator.vb" />
+    <Compile Include="Mediators\DocumentIQIMediator.vb" />
+    <Compile Include="Mediators\DocumentIQVMediator.vb" />
+    <Compile Include="Mediators\DocumentMediatorFactory.vb" />
+    <Compile Include="Mediators\DocumentPGRMediator.vb" />
+    <Compile Include="Utils\ErrorForm.Designer.vb">
+      <DependentUpon>ErrorForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Utils\ErrorForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Utils\ErrorHandler.vb" />
+    <Compile Include="FormMembers\Utenti\InfoUtenti\FrmAttitudini.Designer.vb">
+      <DependentUpon>FrmAttitudini.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormMembers\Utenti\InfoUtenti\FrmAttitudini.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMembers\Servizi\Deleghe\FrmCausaliRevoca.Designer.vb">
+      <DependentUpon>FrmCausaliRevoca.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormMembers\Servizi\Deleghe\FrmCausaliRevoca.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMembers\Servizi\Financial\frmCompetenza.Designer.vb">
+      <DependentUpon>frmCompetenza.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormMembers\Servizi\Financial\frmCompetenza.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMembers\Servizi\Deleghe\FrmDettagliDeleghe.Designer.vb">
+      <DependentUpon>FrmDettagliDeleghe.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormMembers\Servizi\Deleghe\FrmDettagliDeleghe.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMembers\FrmElaborazioneInCorso.Designer.vb">
+      <DependentUpon>FrmElaborazioneInCorso.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormMembers\FrmElaborazioneInCorso.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMembers\Servizi\Vertenze\FrmEventi.Designer.vb">
+      <DependentUpon>FrmEventi.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormMembers\Servizi\Vertenze\FrmEventi.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMembers\FrmIntervalloDate.Designer.vb">
+      <DependentUpon>FrmIntervalloDate.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormMembers\FrmIntervalloDate.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMembers\Servizi\Financial\FrmItemContabile.Designer.vb">
+      <DependentUpon>FrmItemContabile.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormMembers\Servizi\Financial\FrmItemContabile.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMembers\Servizi\Financial\FrmItemRistornate.Designer.vb">
+      <DependentUpon>FrmItemRistornate.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormMembers\Servizi\Financial\FrmItemRistornate.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMembers\FrmLista.Designer.vb">
+      <DependentUpon>FrmLista.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormMembers\FrmLista.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMembers\FrmOpzioni.Designer.vb">
+      <DependentUpon>FrmOpzioni.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormMembers\FrmOpzioni.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMembers\Utenti\InfoUtenti\FrmPreferenza.Designer.vb">
+      <DependentUpon>FrmPreferenza.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormMembers\Utenti\InfoUtenti\FrmPreferenza.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMembers\Servizi\Vertenze\FrmRicercaVertenze.Designer.vb">
+      <DependentUpon>FrmRicercaVertenze.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormMembers\Servizi\Vertenze\FrmRicercaVertenze.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMembers\Servizi\Financial\FrmRicercheIQI.Designer.vb">
+      <DependentUpon>FrmRicercheIQI.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormMembers\Servizi\Financial\FrmRicercheIQI.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMembers\Servizi\Financial\FrmRicrechePGR.Designer.vb">
+      <DependentUpon>FrmRicrechePGR.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormMembers\Servizi\Financial\FrmRicrechePGR.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMembers\Segreteria\InfoAziende\FrmSediOperative.Designer.vb">
+      <DependentUpon>FrmSediOperative.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormMembers\Segreteria\InfoAziende\FrmSediOperative.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMembers\Segreteria\InfoAziende\FrmSelSedi.Designer.vb">
+      <DependentUpon>FrmSelSedi.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormMembers\Segreteria\InfoAziende\FrmSelSedi.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMembers\ArchiviDocumentaliLoaders\FrmSpostaFile.Designer.vb">
+      <DependentUpon>FrmSpostaFile.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormMembers\ArchiviDocumentaliLoaders\FrmSpostaFile.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GridLoaderMembers\GridLoaderDocumentFactory.vb" />
+    <Compile Include="GridLoaderMembers\GridLoaderNewIQA.vb" />
+    <Compile Include="GridLoaderMembers\GridLoaderNewIQI.vb" />
+    <Compile Include="GridLoaderMembers\GridLoaderNewIQV.vb" />
+    <Compile Include="GridLoaderMembers\GridLoaderNewPGR.vb" />
+    <Compile Include="GridLoaderMembers\GridLoaderRicercheIQI.vb" />
+    <Compile Include="GridLoaderMembers\GridLoaderRicercheIQV.vb" />
+    <Compile Include="GridLoaderMembers\GridLoaderRicerchePGR.vb" />
+    <Compile Include="GridLoaderMembers\GridLoaderRptIQ.vb" />
+    <Compile Include="GridLoaderMembers\GridLoaderRptIscritti.vb" />
+    <Compile Include="GridLoaderMembers\GridLoaderViewIQA.vb" />
+    <Compile Include="GridLoaderMembers\GridLoaderViewIQI.vb" />
+    <Compile Include="GridLoaderMembers\GridLoaderViewIQV.vb" />
+    <Compile Include="GridLoaderMembers\GridLoaderViewPGR.vb" />
+    <Compile Include="Mediators\IDocumentViewMediator.vb" />
+    <Compile Include="Utils\IdAvvocatoTextbox.Designer.vb">
+      <DependentUpon>IdAvvocatoTextbox.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Utils\IdAvvocatoTextbox.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Utils\IdListaUtentiTextBox.Designer.vb">
+      <DependentUpon>IdListaUtentiTextBox.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Utils\IdListaUtentiTextBox.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Utils\IdOffertaTextBox.Designer.vb">
+      <DependentUpon>IdOffertaTextBox.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Utils\IdOffertaTextBox.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Utils\IdUtenteTextBox.Designer.vb">
+      <DependentUpon>IdUtenteTextBox.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Utils\IdUtenteTextBox.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GridLoaderMembers\AbstractGridLoader.vb" />
+    <Compile Include="Mediators\InterfaceMediator.vb" />
+    <Compile Include="Controls\Reports\ReportIncassiQuote.Designer.vb">
+      <DependentUpon>ReportIncassiQuote.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Reports\ReportIncassiQuote.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Reports\ReportIscritti.Designer.vb">
+      <DependentUpon>ReportIscritti.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Reports\ReportIscritti.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SearchMembers\SearchContratti.Designer.vb">
+      <DependentUpon>SearchContratti.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SearchMembers\SearchContratti.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMembers\FrmSelezionaId.Designer.vb">
+      <DependentUpon>FrmSelezionaId.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormMembers\FrmSelezionaId.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Utils\IdAziendaTextBox.Designer.vb">
+      <DependentUpon>IdAziendaTextBox.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Utils\IdAziendaTextBox.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Utils\IdContoTextBox.Designer.vb">
+      <DependentUpon>IdContoTextBox.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Utils\IdContoTextBox.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Utils\IdPagamentoTextBox.Designer.vb">
+      <DependentUpon>IdPagamentoTextBox.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Utils\IdPagamentoTextBox.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Utils\IdReferenteTextBox.Designer.vb">
+      <DependentUpon>IdReferenteTextBox.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Utils\IdReferenteTextBox.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SearchMembers\IFrmSearch.vb" />
+    <Compile Include="Utils\MasterControl.Designer.vb">
+      <DependentUpon>MasterControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Utils\MasterControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MDIForm.Designer.vb">
+      <DependentUpon>MDIForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MDIForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SearchMembers\SearchAziende.Designer.vb">
+      <DependentUpon>SearchAziende.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SearchMembers\SearchAziende.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SearchMembers\SearchConti.Designer.vb">
+      <DependentUpon>SearchConti.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SearchMembers\SearchConti.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SearchMembers\SearchDocumenti.Designer.vb">
+      <DependentUpon>SearchDocumenti.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SearchMembers\SearchDocumenti.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SearchMembers\SearchReferenti.Designer.vb">
+      <DependentUpon>SearchReferenti.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SearchMembers\SearchReferenti.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SearchMembers\SearchUtenti.Designer.vb">
+      <DependentUpon>SearchUtenti.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SearchMembers\SearchUtenti.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Settings.vb" />
+    <Compile Include="Utils\SpecialButton.Designer.vb">
+      <DependentUpon>SpecialButton.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Utils\SpecialButton.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Utils\StackView.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Web References\FenealgestServices\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Controls\Financial\ControlPagamentoQuotePrevisionali.resx">
+      <DependentUpon>ControlPagamentoQuotePrevisionali.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Reports\ControlPrepareReportIncarichi.resx">
+      <DependentUpon>ControlPrepareReportIncarichi.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Reports\ControlPrepareRptdocumenti.resx">
+      <DependentUpon>ControlPrepareRptdocumenti.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Reports\ControlPrepareRptIscrittiDTO.resx">
+      <DependentUpon>ControlPrepareRptIscrittiDTO.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Reports\ControlPrepareRptLibDTO.resx">
+      <DependentUpon>ControlPrepareRptLibDTO.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Reports\ReportDocumenti.resx">
+      <DependentUpon>ReportDocumenti.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Reports\ReportIncarichi.resx">
+      <DependentUpon>ReportIncarichi.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Reports\ReportLiberiDTO.resx">
+      <DependentUpon>ReportLiberiDTO.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Reports\ReportIscrittiDTO.resx">
+      <DependentUpon>ReportIscrittiDTO.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Segreteria\ControlAnagraficaAvvocato.resx">
+      <DependentUpon>ControlAnagraficaAvvocato.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\SetUp\ControlFondi.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ControlFondi.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Segreteria\ControlSegreteria.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ControlSegreteria.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\SetUp\ControlTipoDocumentazione.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ControlTipoDocumentazione.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Deleghe\ControlAccettazioneDelega.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ControlAccettazioneDelega.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Deleghe\ControlInoltroDelega.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ControlInoltroDelega.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Utenti\CompilazioneModelli\ControlCompilazioneModelli1.resx">
+      <DependentUpon>ControlCompilazioneModelli1.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Utenti\ListeLavoro\ControlSelezioneComponentiLista.resx">
+      <DependentUpon>ControlSelezioneComponentiLista.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMembers\ArchiviDocumentaliLoaders\FrmAllegaFile.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmAllegaFile.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMembers\ArchiviDocumentaliLoaders\FrmArchivioDocumentale.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmArchivioDocumentale.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMembers\ArchiviDocumentaliLoaders\FrmDeleteElectronicDocument.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmDeleteElectronicDocument.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMembers\ArchiviDocumentaliLoaders\FrmDocumentoElettronico.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmDocumentoElettronico.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMembers\ArchiviDocumentaliLoaders\FrmRinominaFile.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmRinominaFile.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMembers\FrmCacolatoreCF.resx">
+      <DependentUpon>FrmCacolatoreCF.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMembers\FrmCambiaPassword.resx">
+      <DependentUpon>FrmCambiaPassword.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMembers\FrmDatiFiscali.resx">
+      <DependentUpon>FrmDatiFiscali.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMembers\FrmExportData.resx">
+      <DependentUpon>FrmExportData.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMembers\FrmExportIndex.resx">
+      <DependentUpon>FrmExportIndex.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMembers\FrmImportExport.resx">
+      <DependentUpon>FrmImportExport.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMembers\Rendiconti\FrmCreaRendiconto.resx">
+      <DependentUpon>FrmCreaRendiconto.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMembers\Rendiconti\FrmCreateRendiconto.resx">
+      <DependentUpon>FrmCreateRendiconto.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMembers\Rendiconti\FrmViewRendiconti.resx">
+      <DependentUpon>FrmViewRendiconti.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMembers\Rendiconti\FrmViewRendiconto.resx">
+      <DependentUpon>FrmViewRendiconto.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMembers\Servizi\Deleghe\FrmBozzaDelega.resx">
+      <DependentUpon>FrmBozzaDelega.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMembers\Servizi\Deleghe\FrmGeneraDeleghe.resx">
+      <DependentUpon>FrmGeneraDeleghe.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMembers\Servizi\Deleghe\FrmMagazzinoDeleghe.resx">
+      <DependentUpon>FrmMagazzinoDeleghe.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMembers\Utenti\Compilazione Modelli\FrmCompilazioneModello.resx">
+      <DependentUpon>FrmCompilazioneModello.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMembers\Utenti\Compilazione Modelli\FrmSelezionaModello.resx">
+      <DependentUpon>FrmSelezionaModello.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMembers\Utenti\Comunicazioni\FrmComunicazioniMassiveWizard.resx">
+      <DependentUpon>FrmComunicazioniMassiveWizard.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMembers\Utenti\Comunicazioni\FrmSelezioneIndiceLista.resx">
+      <DependentUpon>FrmSelezioneIndiceLista.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMembers\Utenti\Incarichi\FrmEtichietteAziende.resx">
+      <DependentUpon>FrmEtichietteAziende.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMembers\Utenti\Incarichi\FrmStampaPermessi.resx">
+      <DependentUpon>FrmStampaPermessi.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMembers\Utenti\InfoUtenti\FrmIncarichi.resx">
+      <DependentUpon>FrmIncarichi.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMembers\Utenti\ListeLavoro\FrmConfrontoListeLavoro.resx">
+      <DependentUpon>FrmConfrontoListeLavoro.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMembers\Utenti\ListeLavoro\FrmConfrontoListeWizard.resx">
+      <DependentUpon>FrmConfrontoListeWizard.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMembers\Utenti\ListeLavoro\FrmDocumentoToListaLavoro.resx">
+      <DependentUpon>FrmDocumentoToListaLavoro.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMembers\Utenti\ListeLavoro\FrmExportEtichette.resx">
+      <DependentUpon>FrmExportEtichette.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMembers\Utenti\ListeLavoro\FrmExportLista.resx">
+      <DependentUpon>FrmExportLista.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMembers\Utenti\ListeLavoro\FrmReportDelegheToListaLavoro.resx">
+      <DependentUpon>FrmReportDelegheToListaLavoro.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMembers\Utenti\ListeLavoro\FrmReportIQToListaLavoro.resx">
+      <DependentUpon>FrmReportIQToListaLavoro.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMembers\Utenti\ListeLavoro\FrmReportIscrittiToListaLavoro.resx">
+      <DependentUpon>FrmReportIscrittiToListaLavoro.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMembers\Utenti\ListeLavoro\FrmReportLiberiToListaLavoro.resx">
+      <DependentUpon>FrmReportLiberiToListaLavoro.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMembers\Utenti\ListeLavoro\FrmSelezionaListaLavoro.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmSelezionaListaLavoro.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMembers\Utenti\InfoUtenti\FrmFiglio.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmFiglio.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMembers\Servizi\Prestazoni\FrmImportaPrestazioni.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmImportaPrestazioni.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMembers\Segreteria\Tessere\FrmOptStampaTessere.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmOptStampaTessere.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMembers\Servizi\Deleghe\FrmTransioniDeleghe.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmTransioniDeleghe.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMembers\Servizi\Deleghe\FrmVisualizzatoreDeleghe.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmVisualizzatoreDeleghe.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMembers\Utenti\ListeLavoro\FrmSelezionaTipoConversione.resx">
+      <DependentUpon>FrmSelezionaTipoConversione.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMembers\Utenti\RiepiloghiUtente\FrmRiepilogoAttivita.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmRiepilogoAttivita.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmInformazioni.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmInformazioni.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Utenti\ControlListaLavoro.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ControlListaLavoro.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\SetUp\ControlCausaleComunicazione.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ControlCausaleComunicazione.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Utenti\Comunicazioni\ControlComunicazione.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ControlComunicazione.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\SetUp\ControlAbilita.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ControlAbilita.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Domande_Offerte\ControlAnalisiDomandaLavoro.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ControlAnalisiDomandaLavoro.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Domande_Offerte\ControlAnalisiOffertaLavoro.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ControlAnalisiOffertaLavoro.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Utenti\Comunicazioni\ControlComunicazioneMassiva.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ControlComunicazioneMassiva.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\SetUp\ControlLivelloAbilita.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ControlLivelloAbilita.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Domande_Offerte\ControlOffertaLavoro.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ControlOffertaLavoro.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Domande_Offerte\ControlPropostaLavoro.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ControlPropostaLavoro.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\SetUp\ControlTipoComunicazione.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ControlTipoComunicazione.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Utenti\Comunicazioni\ControlVisualizzatoreComunicazioni.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ControlVisualizzatoreComunicazioni.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Domande_Offerte\ControlVisualizzatoreOfferte.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ControlVisualizzatoreOfferte.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Utenti\Prestazioni\ControlVisualizzatorePrestazioni.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ControlVisualizzatorePrestazioni.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Domande_Offerte\ControlVisualizzatoreProposte.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ControlVisualizzatoreProposte.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Reports\ControlPrepareRptDeleghe.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ControlPrepareRptDeleghe.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Reports\ControlPrepareRptLib.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ControlPrepareRptLib.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Reports\ControlPrepareRptPrestazioni.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ControlPrepareRptPrestazioni.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Reports\ControlPrepareRptVertenze.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ControlPrepareRptVertenze.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Reports\ReportDeleghe.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ReportDeleghe.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Reports\ReportLiberi.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ReportLiberi.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Reports\ReportPrestazioni.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ReportPrestazioni.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Reports\ReportVertenze.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ReportVertenze.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMembers\Utenti\InfoUtenti\FrmInfos.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmInfos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMembers\Segreteria\FrmIscritti.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmIscritti.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMembers\Servizi\Financial\FrmItemOfferta.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmItemOfferta.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMembers\Utenti\ListeLavoro\FrmListaLavoro.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmListaLavoro.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMembers\Utenti\RiepiloghiUtente\FrmQuoteUtente.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmQuoteUtente.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMembers\FrmSelectPrinter.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmSelectPrinter.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMembers\Utenti\InfoUtenti\FrmSituazioneFamiliare.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmSituazioneFamiliare.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMembers\FrmTagSupplementari.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmTagSupplementari.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReport1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReport1.vb</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\licenses.licx" />
+    <EmbeddedResource Include="SearchMembers\SearchAvvocati.resx">
+      <DependentUpon>SearchAvvocati.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SearchMembers\SearchListaUtenti.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SearchListaUtenti.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SearchMembers\SearchOfferte.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SearchOfferte.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Security\ManagerProfili.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ManagerProfili.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Security\ManagerRuoli.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ManagerRuoli.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Security\ProfileDescriptorForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ProfileDescriptorForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Security\ProfileListForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ProfileListForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Security\uxLogonForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>uxLogonForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Security\uxUserForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>uxUserForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Utils\AbstractBrowserControl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AbstractBrowserControl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Utils\CircleButton.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>CircleButton.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Segreteria\Aziende\ControlAnagraficaAzienda.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ControlAnagraficaAzienda.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\SetUp\ControlAnagraficaConto.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ControlAnagraficaConto.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Segreteria\ControlAnagraficaReferente.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ControlAnagraficaReferente.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Utenti\ControlAnagraficaUtente.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ControlAnagraficaUtente.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\SetUp\ControlCausaliRevoca.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ControlCausaliRevoca.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Deleghe\ControlDelega.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ControlDelega.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Deleghe\ControlDelegaAccettata.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ControlDelegaAccettata.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Deleghe\ControlDelegaAnnullata.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ControlDelegaAnnullata.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Deleghe\ControlDelegaAttiva.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ControlDelegaAttiva.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Deleghe\ControlDelegaInoltrata.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ControlDelegaInoltrata.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Deleghe\ControlDelegaRevocata.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ControlDelegaRevocata.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Financial\ControlDocumentView.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ControlDocumentView.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Segreteria\ControlEnteBilaterale.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ControlEnteBilaterale.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ControlHomePage.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ControlHomePage.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\SetUp\ControlInps.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ControlInps.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\SetUp\ControlIstituti.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ControlIstituti.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Financial\ControlItemContabile.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ControlItemContabile.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Utils\ControlloListeIDs.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ControlloListeIDs.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Utils\ControlloSelezioneCompetenza.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ControlloSelezioneCompetenza.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Utils\ControlloselezioneDataRange.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ControlloselezioneDataRange.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Financial\ControlPagamentoQuoteAssociative.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ControlPagamentoQuoteAssociative.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Financial\ControlPagamentoQuoteInps.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ControlPagamentoQuoteInps.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Financial\ControlPagamentoQuoteVertenza.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ControlPagamentoQuoteVertenza.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Financial\ControlPagamentoReferenti.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ControlPagamentoReferenti.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Reports\ControlPrepareRptIQ.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ControlPrepareRptIQ.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Reports\ControlPrepareRptIscritti.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ControlPrepareRptIscritti.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Utenti\Prestazioni\ControlPrestazioni.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ControlPrestazioni.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\SetUp\ControlReparti.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ControlReparti.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Financial\ControlRicercheIQI.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ControlRicercheIQI.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Financial\ControlRicerchePGR.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ControlRicerchePGR.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Financial\ControlRicrcheIQV.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ControlRicrcheIQV.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Financial\ControlSaldoConto.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ControlSaldoConto.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Utils\ControlSelPeriodiMensili.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ControlSelPeriodiMensili.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Segreteria\ControlSettore.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ControlSettore.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Utils\ControlStackView.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ControlStackView.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\SetUp\ControlTipoContratto.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ControlTipoContratto.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\SetUp\ControlTipoPrestazioni.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ControlTipoPrestazioni.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Utenti\Vertenze\ControlVertenza.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ControlVertenza.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Deleghe\ControlVisualizzatoreDeleghe.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ControlVisualizzatoreDeleghe.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Utenti\Vertenze\ControlVisualizzaVertenze.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ControlVisualizzaVertenze.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Utils\CustomBar.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>CustomBar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Deleghe\DelegheActions.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>DelegheActions.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMembers\Utenti\InfoUtenti\FrmAttitudini.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmAttitudini.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMembers\Servizi\Deleghe\FrmCausaliRevoca.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmCausaliRevoca.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMembers\Servizi\Financial\frmCompetenza.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmCompetenza.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMembers\Servizi\Deleghe\FrmDettagliDeleghe.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmDettagliDeleghe.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMembers\FrmElaborazioneInCorso.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmElaborazioneInCorso.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMembers\Servizi\Vertenze\FrmEventi.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmEventi.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMembers\FrmIntervalloDate.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmIntervalloDate.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMembers\Servizi\Financial\FrmItemContabile.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmItemContabile.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMembers\Servizi\Financial\FrmItemRistornate.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmItemRistornate.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMembers\FrmLista.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmLista.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMembers\FrmOpzioni.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmOpzioni.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMembers\Utenti\InfoUtenti\FrmPreferenza.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmPreferenza.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMembers\Servizi\Vertenze\FrmRicercaVertenze.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmRicercaVertenze.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMembers\Servizi\Financial\FrmRicercheIQI.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmRicercheIQI.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMembers\Servizi\Financial\FrmRicrechePGR.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmRicrechePGR.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMembers\Segreteria\InfoAziende\FrmSediOperative.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmSediOperative.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMembers\Segreteria\InfoAziende\FrmSelSedi.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmSelSedi.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMembers\ArchiviDocumentaliLoaders\FrmSpostaFile.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmSpostaFile.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Utils\ErrorForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ErrorForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Utils\IdOffertaTextBox.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>IdOffertaTextBox.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Utils\IdReferenteTextBox.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>IdReferenteTextBox.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Reports\ReportIncassiQuote.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ReportIncassiQuote.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Reports\ReportIscritti.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ReportIscritti.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SearchMembers\SearchContratti.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SearchContratti.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMembers\FrmSelezionaId.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmSelezionaId.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Utils\MasterControl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MasterControl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MDIForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MDIForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SearchMembers\SearchAziende.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SearchAziende.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SearchMembers\SearchConti.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SearchConti.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SearchMembers\SearchDocumenti.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SearchDocumenti.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SearchMembers\SearchReferenti.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SearchReferenti.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SearchMembers\SearchUtenti.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SearchUtenti.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Utils\SpecialButton.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SpecialButton.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Utils\StackView.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>StackView.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Etichette\dot\Aziende\A4 1x1.dot">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Etichette\dot\Aziende\A4 1x2 bordato.dot">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Etichette\dot\Aziende\A4 1x2.dot">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Etichette\dot\Aziende\A4 2x2 bordato.dot">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Etichette\dot\Aziende\A4 2x2.dot">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Etichette\dot\Aziende\A4 2x4 bordato.dot">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Etichette\dot\Aziende\A4 2x4.dot">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Etichette\dot\Aziende\A4 2x6 bordato.dot">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Etichette\dot\Aziende\A4 2x6.dot">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Etichette\dot\Aziende\A4 2x7 bordato.dot">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Etichette\dot\Aziende\A4 2x7.dot">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Etichette\dot\Aziende\A4 2x8 bordato.dot">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Etichette\dot\Aziende\A4 2x8.dot">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Etichette\dot\Aziende\A4 3x11 bordato.dot">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Etichette\dot\Aziende\A4 3x6 bordato.dot">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Etichette\dot\Aziende\A4 3x7 bordato.dot">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Etichette\dot\Aziende\A4 3x7.dot">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Etichette\dot\Aziende\A4 3x8 bordato.dot">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Etichette\dot\Aziende\A4 3x8.dot">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Etichette\dot\Aziende\A4 4x10.dot">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Etichette\dot\Aziende\A4 4x11.dot">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Etichette\dot\Aziende\A4 4x12 bordato.dot">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Etichette\dot\Aziende\A4 5x12 bordato.dot">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Etichette\dot\Aziende\A4 5x13 bordato.dot">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Etichette\dot\Aziende\A4 6x12 bordato.dot">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Etichette\dot\Aziende\Busta C5 1x1.dot">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\DataSources\WIN.DOMAIN.FEDERATIONARTIFACTS.ElectronicDocumentDTO.datasource" />
+    <None Include="My Project\DataSources\WIN.DOMAIN.FEDERATIONARTIFACTS.ImportExport+ElaborationType.datasource" />
+    <None Include="My Project\DataSources\WIN.DOMAIN.FEDERATIONARTIFACTS.ImportExport+ResultType.datasource" />
+    <None Include="My Project\DataSources\WIN.DOMAIN.FEDERATIONARTIFACTS.ImportExport.datasource" />
+    <None Include="My Project\DataSources\WIN.DOMAIN.FEDERATIONARTIFACTS.IncaricoDTO.datasource" />
+    <None Include="My Project\DataSources\WIN.DOMAIN.FEDERATIONARTIFACTS.Rendiconto.datasource" />
+    <None Include="My Project\DataSources\WIN.DOMAIN.FED_SERVICES.BozzaDelega.datasource" />
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Templates\TemplateImportIQI.xlt" />
+    <None Include="Web References\FenealgestServices\FenealgestwebServices.wsdl" />
+    <None Include="Web References\FenealgestServices\QueryResultDTO.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\FenealgestServices\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WarningHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ok.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo feneal2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Aggiorna.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HomeHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GoToPrevious.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GoToNextHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\DataSources\ControlloListeIDs.IdClass.datasource" />
+    <None Include="Resources\Aggiorna1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SearchFolderPaint.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SearchPaint.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NewWindowPaint.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OpenPaint.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SearchInFolderPaint.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OpenFolderPaint.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CommentPaint.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EditInformationPaint.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RenameFolderPaint.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SortPaint.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SortDescendingPaint.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DeleteShotcutPaint.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OpenSelectedItemHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ZoomHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AttachmentHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DocumentHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\saveHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Edit_UndoHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PrintHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CriticalPaint.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\InformationPaint.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Control_ColorDialogPaint.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AlertPaint.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Web References\FenealgestServices\FenealgestwebServices.disco" />
+    <None Include="app.config">
+    </None>
+    <Content Include="Etichette\image\A4 1x1.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Etichette\image\A4 1x2 bordato.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Etichette\image\A4 1x2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Etichette\image\A4 2x2 bordato.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Etichette\image\A4 2x2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Etichette\image\A4 2x4 bordato.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Etichette\image\A4 2x4.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Etichette\image\A4 2x6 bordato.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Etichette\image\A4 2x6.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Etichette\image\A4 2x7 bordato.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Etichette\image\A4 2x7.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Etichette\image\A4 2x8 bordato.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Etichette\image\A4 2x8.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Etichette\image\A4 3x11 bordato.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Etichette\image\A4 3x6 bordato.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Etichette\image\A4 3x7 bordato.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Etichette\image\A4 3x7.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Etichette\image\A4 3x8 bordato.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Etichette\image\A4 3x8.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Etichette\image\A4 4x10.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Etichette\image\A4 4x11.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Etichette\image\A4 4x12 bordato.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Etichette\image\A4 5x12 bordato.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Etichette\image\A4 5x13 bordato.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Etichette\image\A4 6x12 bordato.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Etichette\image\non disponibile.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Fenealgest\default.htm">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Fenealgest\images\1.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Fenealgest\images\2.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Fenealgest\images\3.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Fenealgest\images\4.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Fenealgest\images\5.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Fenealgest\images\6.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Fenealgest\images\bg.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Fenealgest\images\box.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Fenealgest\images\box.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Fenealgest\images\fascia.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Fenealgest\images\logo.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Fenealgest\images\noesis.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Fenealgest\images\sassiland.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Fenealgest\images\testa.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Fenealgest\images\testa.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="HelpResources\Manuale FenealNet.chm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="HelpResources\Manuale FenealNet.chw">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Include="Etichette\dot\A4 1x1.dot">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Etichette\dot\A4 1x2 bordato.dot">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Etichette\dot\A4 1x2.dot">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Etichette\dot\A4 2x2 bordato.dot">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Etichette\dot\A4 2x2.dot">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Etichette\dot\A4 2x4 bordato.dot">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Etichette\dot\A4 2x4.dot">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Etichette\dot\A4 2x6 bordato.dot">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Etichette\dot\A4 2x6.dot">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Etichette\dot\A4 2x7 bordato.dot">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Etichette\dot\A4 2x7.dot">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Etichette\dot\A4 2x8 bordato.dot">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Etichette\dot\A4 2x8.dot">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Etichette\dot\A4 3x11 bordato.dot">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Etichette\dot\A4 3x6 bordato.dot">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Etichette\dot\A4 3x7 bordato.dot">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Etichette\dot\A4 3x7.dot">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Etichette\dot\A4 3x8 bordato.dot">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Etichette\dot\A4 3x8.dot">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Etichette\dot\A4 4x10.dot">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Etichette\dot\A4 4x11.dot">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Etichette\dot\A4 4x12 bordato.dot">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Etichette\dot\A4 5x12 bordato.dot">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Etichette\dot\A4 5x13 bordato.dot">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Etichette\dot\A4 6x12 bordato.dot">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Etichette\dot\Tessere\Tessere_A4 1x1.dot">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Etichette\dot\Tessere\Tessere_A4 1x2 bordato.dot">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Etichette\dot\Tessere\Tessere_A4 1x2.dot">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Etichette\dot\Tessere\Tessere_A4 2x2 bordato.dot">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Etichette\dot\Tessere\Tessere_A4 2x2.dot">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Etichette\dot\Tessere\Tessere_A4 2x4 bordato.dot">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Etichette\dot\Tessere\Tessere_A4 2x4.dot">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Etichette\dot\Tessere\Tessere_A4 2x6 bordato.dot">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Etichette\dot\Tessere\Tessere_A4 2x6.dot">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Etichette\dot\Tessere\Tessere_A4 2x7 bordato.dot">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Etichette\dot\Tessere\Tessere_A4 2x7.dot">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Etichette\dot\Tessere\Tessere_A4 2x8 bordato.dot">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Etichette\dot\Tessere\Tessere_A4 2x8.dot">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Etichette\dot\Tessere\Tessere_A4 3x11 bordato.dot">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Etichette\dot\Tessere\Tessere_A4 3x6 bordato.dot">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Etichette\dot\Tessere\Tessere_A4 3x7 bordato.dot">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Etichette\dot\Tessere\Tessere_A4 3x7.dot">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Etichette\dot\Tessere\Tessere_A4 3x8 bordato.dot">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Etichette\dot\Tessere\Tessere_A4 3x8.dot">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Etichette\dot\Tessere\Tessere_A4 4x10.dot">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Etichette\dot\Tessere\Tessere_A4 4x11.dot">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Etichette\dot\Tessere\Tessere_A4 5x13 bordato.dot">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="DB.Config">
+    </None>
+    <None Include="Fenealgest\images\Thumbs.db">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Initializzation\DBAcc.Config" />
+    <None Include="Initializzation\DBMySQL.Config" />
+    <None Include="Initializzation\EULA.rtf" />
+    <None Include="ModelliPrecompilati\Accorpamento Ore - APE.dot">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="ModelliPrecompilati\Assemblea Feneal.dot">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="ModelliPrecompilati\Assemblea FlC.dot">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="ModelliPrecompilati\Comunicazione Aziende-Iscritti.dot">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="ModelliPrecompilati\ConvocazioneLavoratore.dot">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="ModelliPrecompilati\CurriculumEuropeo.dot">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="ModelliPrecompilati\Delega Controversia in sede sindacale.dot">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="ModelliPrecompilati\DelegaSindacale.dot">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="ModelliPrecompilati\Detrazioni2009.dot">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="ModelliPrecompilati\Lettera Invio-Deleghe.dot">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="ModelliPrecompilati\ModelloRevocaSindacale.dot">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="ModelliPrecompilati\Monocratica.dot">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="ModelliPrecompilati\PermessoSindacale.dot">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="ModelliPrecompilati\Richiesta collegiale DPL.dot">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="ModelliPrecompilati\Richiesta Collegio Arbitrale.dot">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="ModelliPrecompilati\Risposta a lettera di contestazione.dot">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="ModelliPrecompilati\VariazioneIndirizzo.dot">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\DataSources\WIN.DOMAIN.FEDERATIONARTIFACTS.DelegadTO.datasource" />
+    <None Include="My Project\DataSources\WIN.DOMAIN.FEDERATIONARTIFACTS.IscrittoDTO.datasource" />
+    <None Include="My Project\DataSources\WIN.DOMAIN.FEDERATIONARTIFACTS.NonIscrittoDTO.datasource" />
+    <None Include="My Project\DataSources\WIN.DOMAIN.FEDERATIONARTIFACTS.PrestazioneDTO.datasource" />
+    <None Include="My Project\DataSources\WIN.DOMAIN.FEDERATIONARTIFACTS.Quota.datasource" />
+    <None Include="My Project\DataSources\WIN.DOMAIN.FEDERATIONARTIFACTS.UtenteDTO.datasource" />
+    <None Include="My Project\DataSources\WIN.DOMAIN.FEDERATIONARTIFACTS.VertenzaDTO.datasource" />
+    <None Include="Novita\WhatsNew.doc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\RadialChartHS.png" />
+    <None Include="Resources\OrganizerHS.png" />
+    <None Include="Resources\wgawizard.dll.bmp" />
+    <None Include="Resources\wpdshext.dll %285%29.ico" />
+    <None Include="Resources\ActualSizeHS.png" />
+    <None Include="Resources\status_anim.gif" />
+    <None Include="Resources\PropertiesHS.png" />
+    <None Include="Resources\CF.bmp" />
+    <None Include="Resources\wuaucpl.cpl %285%29.ico" />
+    <None Include="Resources\NewItemDocumentHS.png" />
+    <None Include="Resources\SortHS.png" />
+    <None Include="Resources\Flag_grayHS.png" />
+    <None Include="Resources\InterfaceAdd2%282%29.bmp" />
+    <None Include="Resources\interfaceAdd1.bmp" />
+    <None Include="Resources\CheckGrammarHS.png" />
+    <None Include="Resources\Flag_blueHS.png" />
+    <None Include="Resources\Flag_redHS.png" />
+    <None Include="Resources\Flag_greenHS.png" />
+    <None Include="Resources\Eliminaevento.bmp" />
+    <None Include="Resources\NewCardHS.png" />
+    <None Include="Resources\openHS.png" />
+    <None Include="Resources\CommentHS.png" />
+    <None Include="Resources\RenameFolderHS.png" />
+    <None Include="Resources\Annulla.ico" />
+    <None Include="Resources\magnify.exe %282%29.ico" />
+    <None Include="Resources\LVUI2RC.dll %2828%29.ico" />
+    <None Include="Resources\Ripristina.ico" />
+    <None Include="Resources\Revoca.ico" />
+    <None Include="Resources\Inoltra.ico" />
+    <None Include="Resources\GotoShortcutsHS.png" />
+    <None Include="Resources\PushpinHS.png" />
+    <None Include="Resources\NoActionPaint.bmp" />
+    <None Include="Resources\InformationPaint.png" />
+    <None Include="Resources\DeletePaint.png" />
+    <None Include="Resources\DeleteHS.png" />
+    <None Include="Resources\logo feneal gru.JPG" />
+    <None Include="Resources\Vertenza.ico" />
+    <None Include="Resources\VisVertenza.ico" />
+    <None Include="Resources\Nuovenote.ico" />
+    <None Include="Resources\Note.ico" />
+    <None Include="Resources\createPeople4.ico" />
+    <None Include="Resources\hxds.dll %2810%29.ico" />
+    <None Include="Resources\sapi.cpl %285%29.ico" />
+    <None Include="Resources\wmp.dll %2812%29.ico" />
+    <None Include="Resources\Report.ico" />
+    <None Include="Resources\Spunte.ico" />
+    <None Include="Resources\IncassoQuote.ico" />
+    <None Include="Resources\search4files.ico" />
+    <None Include="Resources\Certificato.ico" />
+    <None Include="Resources\Attivita.ico" />
+    <None Include="Resources\NewReferente.ico" />
+    <None Include="Resources\Referente.ico" />
+    <None Include="Resources\Aziende2.ico" />
+    <None Include="Resources\Aziende.ico" />
+    <None Include="Resources\logo feneal gru16.jpg" />
+    <None Include="Resources\logo feneal sfumato16.jpg" />
+    <None Include="Resources\msenv.dll %2812%29.ico" />
+    <None Include="Resources\outicon.exe %2833%29.ico" />
+    <None Include="Resources\ViewPeople.ico" />
+    <None Include="Resources\Aziende1.ico" />
+    <None Include="Resources\createPeople3.ico" />
+    <None Include="Resources\CreatePeople.ico" />
+    <None Include="Resources\CreatePeople2.ico" />
+    <None Include="Resources\CreatePeople1.ico" />
+    <None Include="Resources\FenealNet.bmp" />
+    <None Include="Resources\searchPeoplePaint.bmp" />
+    <None Include="Resources\Anag.ico" />
+    <None Include="Resources\Attività.bmp" />
+    <None Include="Resources\Anagrafiche1.bmp" />
+    <None Include="Resources\Anagrafiche.bmp" />
+    <None Include="Resources\ContabileBMP1.bmp" />
+    <None Include="Resources\Contabile.ico" />
+    <None Include="Resources\userAccountsPaint.bmp" />
+    <None Include="Resources\userPaint.bmp" />
+    <None Include="Resources\New11.png" />
+    <None Include="Resources\Disquette_v21.png" />
+    <None Include="Resources\info11.png" />
+    <None Include="Resources\Delete104.png" />
+    <None Include="Resources\Cancel51.png" />
+    <None Include="Resources\printmgr.png" />
+    <None Include="Resources\db_comit1.png" />
+    <None Include="Resources\db_update1.png" />
+    <None Include="Resources\new58.png" />
+    <None Include="Resources\cancel52.png" />
+    <None Include="Resources\new93.png" />
+    <None Include="Resources\New47.png" />
+    <None Include="Resources\Default Folder.png" />
+    <None Include="Resources\movefile8.png" />
+    <None Include="Resources\default5.png" />
+    <None Include="Resources\search17.png" />
+    <None Include="Resources\kfm.png" />
+    <None Include="Resources\my_documents.png" />
+    <None Include="Resources\USERS FOLDER.png" />
+    <None Include="Resources\kwallet.png" />
+    <None Include="Resources\SYSTEM APPLICATIONS.png" />
+    <None Include="Resources\reminders.png" />
+    <None Include="Resources\trashcan_full.png" />
+    <None Include="Resources\kate.png" />
+    <None Include="Resources\Desktop.png" />
+    <None Include="Resources\notepad9.png" />
+    <None Include="Resources\DeleteShortCut.png" />
+    <None Include="Resources\Delete.png" />
+    <None Include="Resources\Delete105.png" />
+    <None Include="Resources\file-manager.png" />
+    <None Include="Resources\HEINSNEXTGEN DOCUMENTS.png" />
+    <None Include="Resources\HEINSNEXTGEN APPLICATIONS.png" />
+    <None Include="Resources\db_add.png" />
+    <None Include="Resources\db_remove.png" />
+    <None Include="Resources\GlossPNGCalculator.png" />
+    <None Include="Resources\HEINS_QUANTUM_FOLDERS ADRESSES.png" />
+    <None Include="Resources\HEINS_QUANTUM_FOLDERS CAUTION.png" />
+    <None Include="Resources\HEINS_QUANTUM_FOLDERS STOP.png" />
+    <None Include="Resources\HEINS_QUANTUM_FOLDERS LIBRARY.png" />
+    <None Include="Resources\HEINS_QUANTUM_FOLDERS NEWS.png" />
+    <None Include="Resources\HEINS_QUANTUM_FOLDERS APPLICATIONS.png" />
+    <None Include="Resources\cal.png" />
+    <None Include="Resources\cal1.png" />
+    <None Include="Resources\MarioSZ.png" />
+    <None Include="Resources\MSN_MESSENGER_9.png" />
+    <None Include="Resources\Home_2.png" />
+    <None Include="Resources\calculator.png" />
+    <None Include="Resources\calculator2.png" />
+    <None Include="Resources\Calculator213122.png" />
+    <None Include="Resources\kuser.png" />
+    <None Include="Resources\word333.png" />
+    <None Include="Resources\Folder.png" />
+    <None Include="Resources\home.png" />
+    <None Include="Resources\search_box.png" />
+    <None Include="Resources\k-multiple-32x32.png" />
+    <None Include="Resources\undo-48x48-inactive.png" />
+    <None Include="Resources\undo-48x48-active.png" />
+    <None Include="Resources\undo-32x32-active.png" />
+    <None Include="Resources\undo-32x32-inactive.png" />
+    <None Include="Resources\save-32x32-active.png" />
+    <None Include="Resources\save-32x32-inactive.png" />
+    <None Include="Resources\delete-32x32-active.png" />
+    <None Include="Resources\delete-32x32-inactive.png" />
+    <None Include="Resources\print-32x32-active.png" />
+    <None Include="Resources\print-32x32-inactive.png" />
+    <None Include="Resources\info-32x32-active.png" />
+    <None Include="Resources\info-32x32-inactive.png" />
+    <None Include="Resources\Interdit.png" />
+    <None Include="Resources\vertenza-32x32.png" />
+    <None Include="Resources\addsede-48x48.png" />
+    <None Include="Resources\removesede-48x48.png" />
+    <None Include="Resources\showsede-48x48.png" />
+    <None Include="Resources\internalmenubar.png" />
+    <None Include="Resources\orange-arrow.png" />
+    <None Include="Resources\txt-2-48x48.png" />
+    <None Include="Resources\chat-32x32.png" />
+    <None Include="Resources\edu-languages-32x32.png" />
+    <None Include="Resources\error-32x32.png" />
+    <None Include="Resources\file-manager-32x32.png" />
+    <None Include="Resources\k-dm-config-32x32.png" />
+    <None Include="Resources\k-fig-32x32.png" />
+    <None Include="Resources\korganizer-32x32.png" />
+    <None Include="Resources\korn-32x32.png" />
+    <None Include="Resources\k-ghost-view-48x48.png" />
+    <None Include="Resources\k-address-book-48x48.png" />
+    <None Include="Resources\3floppy-unmount-48x48.png" />
+    <None Include="Resources\k-job-viewer-48x48.png" />
+    <None Include="Resources\kate-48x48.png" />
+    <None Include="Resources\kate-48x48-disabled.png" />
+    <None Include="Resources\package-edutainment-48x48-down.png" />
+    <None Include="Resources\package-edutainment-48x48-up.png" />
+    <None Include="Resources\create-16x16.png" />
+    <None Include="Resources\report-16x16.png" />
+    <None Include="Resources\show-16x16.png" />
+    <None Include="Resources\k-calc-48x48.png" />
+    <None Include="Resources\k-get-list-48x48.png" />
+    <None Include="Resources\prestiti-48x48.png" />
+    <None Include="Resources\prestiti-32x32.png" />
+    <None Include="Resources\k-cm-system-32x32.png" />
+    <None Include="Resources\money3.png" />
+    <None Include="Resources\error-32x32-2.png" />
+    <None Include="Resources\korn-32x32-2.png" />
+    <None Include="Resources\edu-languages-32x32-2.png" />
+    <None Include="Resources\chat-32x32-2.png" />
+    <None Include="Resources\folder-open-48x48.png" />
+    <None Include="Resources\folder-download-48x48.png" />
+    <None Include="Resources\word-icon-48x48.png" />
+    <None Include="Resources\word-icon-32x32.png" />
+    <None Include="Resources\k-hot-keys-32x32.png" />
+    <None Include="Resources\folder-open-32x32.png" />
+    <None Include="Resources\folder-download-32x32.png" />
+    <None Include="Resources\file-broken-feneal-32x32.png" />
+    <None Include="Resources\file-broken-32x32.png" />
+    <None Include="Resources\k-calc-32x32.png" />
+    <None Include="Resources\trashcan-empty-32x32.png" />
+    <None Include="Resources\trashcan-full-32x32.png" />
+    <None Include="Resources\email-32x32.png" />
+    <None Include="Resources\k-find-32x32.png" />
+    <None Include="Resources\package-development-32x32.png" />
+    <None Include="Resources\desktop-32x32.png" />
+    <None Include="Resources\k-edit-32x32.png" />
+    <None Include="Resources\k-edit-16x16.png" />
+    <None Include="Resources\file-new-32x32.png" />
+    <None Include="Resources\print-address-48x48.png" />
+    <None Include="Resources\k-address-book-32x32.png" />
+    <None Include="Resources\create-communications-32x32.png" />
+    <None Include="Resources\k-jots-32x32.png" />
+    <None Include="Resources\file-remove-32x32.png" />
+    <None Include="Resources\file-add-32x32.png" />
+    <None Include="Resources\file-view-32x32.png" />
+    <None Include="Resources\file-broken-48x48.png" />
+    <None Include="Resources\folder-orange-48x48.png" />
+    <None Include="Resources\k-ghost-view-32x32.png" />
+    <None Include="Resources\k-ghost-view-32x321.png" />
+    <None Include="Resources\k-ghost-view-32x322.png" />
+    <None Include="Resources\feneal-net.png" />
+    <None Include="Resources\logo-fenealnet-startup.png" />
+    <None Include="Resources\k-multiple-32x32_1.png" />
+    <None Include="Resources\k-multiple-32x32_1_2.png" />
+    <None Include="Resources\riepilogo-attivita-32x32.png" />
+    <None Include="Resources\feneal-net1.png" />
+    <None Include="Resources\Waiting3.png" />
+    <None Include="Resources\bannerNoesis.jpg" />
+    <None Include="Resources\bannerNoesis1.jpg" />
+    <None Include="Resources\logo-fenealnet-Copyright.bmp" />
+    <None Include="Resources\select.bmp" />
+    <None Include="Resources\plus.bmp" />
+    <None Include="Resources\Minus.bmp" />
+    <None Include="Resources\k-calc-16x16.png" />
+    <None Include="Resources\k-calc-16x161.png" />
+    <None Include="Resources\select.png" />
+    <None Include="Resources\plus.png" />
+    <None Include="Resources\Minus.png" />
+    <None Include="Resources\file-add-16x16.png" />
+    <None Include="Resources\k-find-16x16.png" />
+    <None Include="Resources\file-broken-feneal-16x16.png" />
+    <None Include="Resources\folder-blue-32x32.png" />
+    <None Include="Resources\folder-yellow-32x32.png" />
+    <None Include="Resources\folder-cyan-32x32.png" />
+    <None Include="Resources\folder-32x32.png" />
+    <None Include="Resources\folder-red-32x32.png" />
+    <None Include="Resources\folder-orange-32x32.png" />
+    <None Include="Resources\folder-red-32x321.png" />
+    <None Include="Resources\folder-green-32x32.png" />
+    <None Include="Resources\folder-violet-32x32.png" />
+    <None Include="Resources\folder-grey-32x32.png" />
+    <None Include="Resources\synchronize-icon_32_32.png" />
+    <None Include="Resources\Document-Copy-icon32_32.png" />
+    <None Include="Resources\Document-Difficon28_28.png" />
+    <None Include="Resources\Document-Copy-icon28_28.png" />
+    <None Include="Resources\synchronize-icon_28_28.png" />
+    <None Include="Resources\Document-Chart-icon.png" />
+    <None Include="Resources\informazioni.jpg" />
+    <None Include="Resources\info.jpg" />
+    <None Include="Resources\wizard.jpg" />
+    <None Include="Resources\wizard1.jpg" />
+    <None Include="Resources\logoFeneal48x48.png" />
+    <None Include="Resources\Microsoft-Excel32x32.png" />
+    <None Include="Resources\Microsoft-Word32x32.png" />
+    <None Include="Resources\info1.jpg" />
+    <None Include="Resources\logim.jpg" />
+    <Content Include="HelpResources\Teleassistenza.exe">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Initializzation\feneal.ico" />
+    <Content Include="Initializzation\Fenealgest.ico" />
+    <None Include="Resources\lonNoesis.JPG" />
+    <None Include="Resources\calendar_32.png" />
+    <None Include="Resources\calendar_16.png" />
+    <None Include="Resources\statistics_16.png" />
+    <Content Include="it-IT\DevExpress.Data.v11.1.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="it-IT\DevExpress.ExpressApp.AuditTrail.v11.1.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="it-IT\DevExpress.ExpressApp.Chart.v11.1.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="it-IT\DevExpress.ExpressApp.CloneObject.v11.1.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="it-IT\DevExpress.ExpressApp.ConditionalEditorState.v11.1.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="it-IT\DevExpress.ExpressApp.Demos.Win.v11.1.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="it-IT\DevExpress.ExpressApp.FileAttachment.Web.v11.1.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="it-IT\DevExpress.ExpressApp.FileAttachment.Win.v11.1.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="it-IT\DevExpress.ExpressApp.HtmlPropertyEditor.Win.v11.1.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="it-IT\DevExpress.ExpressApp.Kpi.v11.1.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="it-IT\DevExpress.ExpressApp.Objects.v11.1.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="it-IT\DevExpress.ExpressApp.PivotChart.v11.1.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="it-IT\DevExpress.ExpressApp.PivotChart.Win.v11.1.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="it-IT\DevExpress.ExpressApp.PivotGrid.v11.1.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="it-IT\DevExpress.ExpressApp.Printing.Win.v11.1.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="it-IT\DevExpress.ExpressApp.Reports.v11.1.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="it-IT\DevExpress.ExpressApp.Reports.Web.v11.1.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="it-IT\DevExpress.ExpressApp.Reports.Win.v11.1.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="it-IT\DevExpress.ExpressApp.Scheduler.Web.v11.1.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="it-IT\DevExpress.ExpressApp.Scheduler.Win.v11.1.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="it-IT\DevExpress.ExpressApp.ScriptRecorder.v11.1.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="it-IT\DevExpress.ExpressApp.ScriptRecorder.Win.v11.1.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="it-IT\DevExpress.ExpressApp.Security.v11.1.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="it-IT\DevExpress.ExpressApp.StateMachine.v11.1.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="it-IT\DevExpress.ExpressApp.v11.1.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="it-IT\DevExpress.ExpressApp.Validation.v11.1.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="it-IT\DevExpress.ExpressApp.Validation.Win.v11.1.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="it-IT\DevExpress.ExpressApp.ViewVariantsModule.v11.1.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="it-IT\DevExpress.ExpressApp.Web.v11.1.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="it-IT\DevExpress.ExpressApp.Win.v11.1.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="it-IT\DevExpress.PivotGrid.v11.1.Core.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="it-IT\DevExpress.RichEdit.v11.1.Core.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="it-IT\DevExpress.Utils.v11.1.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="it-IT\DevExpress.Xpf.Core.v11.1.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="it-IT\DevExpress.Xpf.Docking.v11.1.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="it-IT\DevExpress.Xpf.Grid.v11.1.Core.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="it-IT\DevExpress.Xpf.LayoutControl.v11.1.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="it-IT\DevExpress.Xpf.NavBar.v11.1.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="it-IT\DevExpress.Xpf.Printing.v11.1.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="it-IT\DevExpress.Xpf.Ribbon.v11.1.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="it-IT\DevExpress.Xpf.RichEdit.v11.1.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="it-IT\DevExpress.Xpf.Scheduler.v11.1.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="it-IT\DevExpress.Xpo.v11.1.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="it-IT\DevExpress.XtraBars.v11.1.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="it-IT\DevExpress.XtraCharts.v11.1.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="it-IT\DevExpress.XtraEditors.v11.1.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="it-IT\DevExpress.XtraGrid.v11.1.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="it-IT\DevExpress.XtraLayout.v11.1.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="it-IT\DevExpress.XtraNavBar.v11.1.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="it-IT\DevExpress.XtraPrinting.v11.1.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="it-IT\DevExpress.XtraReports.v11.1.Extensions.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="it-IT\DevExpress.XtraReports.v11.1.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="it-IT\DevExpress.XtraRichEdit.v11.1.Extensions.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="it-IT\DevExpress.XtraRichEdit.v11.1.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="it-IT\DevExpress.XtraScheduler.v11.1.Core.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="it-IT\DevExpress.XtraScheduler.v11.1.Extensions.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="it-IT\DevExpress.XtraScheduler.v11.1.Reporting.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="it-IT\DevExpress.XtraScheduler.v11.1.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="it-IT\DevExpress.XtraSpellChecker.v11.1.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="it-IT\DevExpress.XtraTreeList.v11.1.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="it-IT\DevExpress.XtraVerticalGrid.v11.1.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="it-IT\DevExpress.XtraWizard.v11.1.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\TemplateImportDeleghe.xlt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\home1.png" />
+    <None Include="Templates\ANF 42 - INCLUSIONE.pdf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Templates\ANFGESTSEP.pdf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Templates\ANF_NN.pdf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Templates\Assegni 2006.pdf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Templates\CIGS - PAG. DIRETTO.pdf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Templates\Congedo Parentale.pdf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Templates\TemplateImportAziende.xlt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Templates\Delega ModInps.PDF">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Templates\Dichiarazione di Malattia.pdf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Templates\Dichiarazione di Permanenza Disoccupazione.pdf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Templates\Disoccupazione Requisiti Ridotti.pdf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Templates\DisoccupazioneOrdinaria-Autocertificazione.pdf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Templates\DL86_88bis.pdf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Templates\DS22 - Modello Impresa.pdf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Templates\Ds__21.pdf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Templates\Ds__21_old.pdf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Templates\ECOCERT.pdf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Templates\Maternit… - Stato.pdf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Templates\Mod Cure Termali.pdf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Templates\MOD.HAND2.pdf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Templates\Modello di detrazioni.pdf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Templates\Modello Hand per maggiorenni.pdf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Templates\Nazioni_Regioni_Provincie_Comuni.xlt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Templates\O1M SOST.pdf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Templates\Richiesta Assegni Familiari per Dipendenti.pdf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Templates\Richiesta Assegni per prestazioni.pdf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Templates\TemplateImportRevoche.xlt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Templates\TemplateImportUtenti.xlt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <Content Include="Templates\TemplateImportLiberi.xlt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\TemplateImportIQA.xlt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{94E38DFF-614B-4CBD-B67C-F211BB35CE8B}" />
+    <Service Include="{967B4E0D-AD0C-4609-AB67-0FA40C0206D8}" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\WIN.FENGEST.HANDLERS\WIN.FENGEST.HANDLERS.vbproj">
+      <Project>{677821DF-57ED-4409-B2A6-384DAD0679B7}</Project>
+      <Name>WIN.FENGEST.HANDLERS</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WIN.FENGEST.INTEGRATION_SERVICES\WIN.FENGEST.INTEGRATION_SERVICES.vbproj">
+      <Project>{6A94EFF1-AC97-44E0-8EC8-3697126DFAE0}</Project>
+      <Name>WIN.FENGEST.INTEGRATION_SERVICES</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WIN.FENGEST.PERSISTENCE\WIN.FENGEST.PERSISTENCE.vbproj">
+      <Project>{F6B84311-43CC-4EB9-9433-A0B043A20403}</Project>
+      <Name>WIN.FENGEST.PERSISTENCE</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WIN.FENGEST.PRINT\WIN.FENGEST.PRINT.csproj">
+      <Project>{bfca50a8-f062-4564-ac08-6c2af0b5a145}</Project>
+      <Name>WIN.FENGEST.PRINT</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WIN.FENGEST_ARTIFACTS.DOMAIN\WIN.FENGEST_ARTIFACTS.DOMAIN.vbproj">
+      <Project>{4CDA0A25-48A3-4B0D-B71F-2EB0A82BFD15}</Project>
+      <Name>WIN.FENGEST_ARTIFACTS.DOMAIN</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WIN.FENGEST_NAZIONALE.SERVICES\WIN.FENGEST_NAZIONALE.INTEGRATION_ENTITIES\WIN.FENGEST_NAZIONALE.INTEGRATION_ENTITIES.csproj">
+      <Project>{FEF19374-07AC-46F6-93A3-F7FB32E2428D}</Project>
+      <Name>WIN.FENGEST_NAZIONALE.INTEGRATION_ENTITIES</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WIN.FENGEST_SERVICES.DOMAIN\WIN.FENGEST_SERVICES.DOMAIN.vbproj">
+      <Project>{15FC8C5D-7817-457E-8F1F-E3958C95C070}</Project>
+      <Name>WIN.FENGEST_SERVICES.DOMAIN</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WIN.TECHNICAL.SECURITY\WIN.TECHNICAL.SECURITY.csproj">
+      <Project>{35A34AE3-E941-47B5-ACAF-43A7BBB2E0FE}</Project>
+      <Name>WIN.TECHNICAL.SECURITY</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WIN.TECHNICAL.VB.PERSISTENCE\WIN.TECHNICAL.VB.PERSISTENCE.vbproj">
+      <Project>{ED116915-FC6D-4A68-A35A-79BE08267D1C}</Project>
+      <Name>WIN.TECHNICAL.VB.PERSISTENCE</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WIN.TECHNICAL.VB.UTILS\WIN.TECHNICAL.VB.UTILS.vbproj">
+      <Project>{466A883D-893E-46FD-A2C0-D4257B63A6C0}</Project>
+      <Name>WIN.TECHNICAL.VB.UTILS</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="https://www.fenealgest.it/servizi/WebServices/FenealgestwebServices.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\FenealgestServices\</RelPath>
+      <UpdateFromURL>https://www.fenealgest.it/servizi/WebServices/FenealgestwebServices.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>MySettings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>WIN_FENGEST_GUI_FenealgestServices_FenealgestwebServices</CachedSettingsPropName>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,9 @@
+ogni backup rappresenta il database in quella versione.
+
+per poterlo aggiornare ad una versione successiva basta eseguire gli script
+dall versione immediatamente successiva a quellla di arrivo:
+ad esempio se ho il backup 1.4 e voglio aggiornarlo alla versione 1.7
+devo eseguire gli script presenti nelle cartelle 
+script1.5
+script1.6
+script1.7

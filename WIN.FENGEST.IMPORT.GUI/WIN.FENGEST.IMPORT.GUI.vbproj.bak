@@ -1,0 +1,420 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4F0DD472-4015-420B-B327-9EE85DC94451}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>WIN.FENGEST.IMPORT.GUI</RootNamespace>
+    <AssemblyName>WIN.FENGEST.IMPORT.GUI</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsFormsWithCustomSubMain</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+    <StartupObject>WIN.FENGEST.IMPORT.GUI.Applicazione</StartupObject>
+    <ApplicationIcon>synchronize-icon_32_32.ico</ApplicationIcon>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <PublishUrl>http://localhost/WIN.FENGEST.IMPORT.GUI/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Data.v13.2, Version=13.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Printing.v13.2.Core, Version=13.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v13.2, Version=13.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v13.2, Version=13.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraPrinting.v13.2, Version=13.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraGrid.v13.2, Version=13.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraLayout.v13.2, Version=13.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="WIN.BASEREUSE" />
+    <Import Include="WIN.DOMAIN.FEDERATIONARTIFACTS" />
+    <Import Include="WIN.FENGEST_NAZIONALE" />
+    <Import Include="WIN.FENGEST_NAZIONALE.INTEGRATION_ENTITIES" />
+    <Import Include="WIN.FENGEST_NAZIONALE.INTEGRATION_ENTITIES.FenealgestImportExport" />
+    <Import Include="WIN.FENGEST_NAZIONALE.INTEGRATION_ENTITIES.FenealgestImportExport.InpsCompliantDetailsCheckSysstem" />
+    <Import Include="WIN.FENGEST_NAZIONALE.INTEGRATION_ENTITIES.FenealwebImportExport" />
+    <Import Include="WIN.FENGEST_NAZIONALE.INTEGRATION_ENTITIES.Serializzation" />
+    <Import Include="WIN.SECURITY" />
+    <Import Include="WIN.TECHNICAL.GUI.COMMONS" />
+    <Import Include="WIN.TECHNICAL.MIDDLEWARE" />
+    <Import Include="WIN.TECHNICAL.MIDDLEWARE.Files" />
+    <Import Include="WIN.TECHNICAL.MIDDLEWARE.Internet" />
+    <Import Include="WIN.TECHNICAL.MIDDLEWARE.Listeners" />
+    <Import Include="WIN.TECHNICAL.MIDDLEWARE.QueueHandlers" />
+    <Import Include="WIN.TECHNICAL.MIDDLEWARE.XmlSerializzation" />
+    <Import Include="WIN.TECHNICAL.PERSISTENCE" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Applicazione.vb" />
+    <Compile Include="Aziende\FrmImportAziende.Designer.vb">
+      <DependentUpon>FrmImportAziende.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Aziende\FrmImportAziende.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Aziende\ImportAziendeScheduler.vb" />
+    <Compile Include="Deleghe\FrmImportDeleghe.Designer.vb">
+      <DependentUpon>FrmImportDeleghe.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Deleghe\FrmImportDeleghe.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Deleghe\ImportDelegheScheduler.vb" />
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Liberi\FrmImportLiberi.Designer.vb">
+      <DependentUpon>FrmImportLiberi.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Liberi\FrmImportLiberi.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Liberi\ImportLiberiScheduler.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="QuoteInps\DataDividerIQI.vb" />
+    <Compile Include="QuoteInps\FrmQuoteInps.Designer.vb">
+      <DependentUpon>FrmQuoteInps.vb</DependentUpon>
+    </Compile>
+    <Compile Include="QuoteInps\FrmQuoteInps.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QuoteInps\FrmQuoteInpsDaPath.Designer.vb">
+      <DependentUpon>FrmQuoteInpsDaPath.vb</DependentUpon>
+    </Compile>
+    <Compile Include="QuoteInps\FrmQuoteInpsDaPath.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QuoteInps\FrmWizardInps.Designer.vb">
+      <DependentUpon>FrmWizardInps.vb</DependentUpon>
+    </Compile>
+    <Compile Include="QuoteInps\FrmWizardInps.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QuoteInps\ImportIQIInpsScheduler.vb" />
+    <Compile Include="QuoteInps\ImportIQIScheduler.vb" />
+    <Compile Include="QuoteInps\Notifiers\ActionScheduler.vb" />
+    <Compile Include="QuoteInps\Notifiers\FrmNotify.Designer.vb">
+      <DependentUpon>FrmNotify.vb</DependentUpon>
+    </Compile>
+    <Compile Include="QuoteInps\Notifiers\FrmNotify.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QuoteInps\Notifiers\FrmViewTemplate.Designer.vb">
+      <DependentUpon>FrmViewTemplate.vb</DependentUpon>
+    </Compile>
+    <Compile Include="QuoteInps\Notifiers\FrmViewTemplate.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Quote\DataDivider.vb" />
+    <Compile Include="Quote\FrmImportIQA.Designer.vb">
+      <DependentUpon>FrmImportIQA.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Quote\FrmImportIQA.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Quote\ImportExport\BackgroundExporter.vb" />
+    <Compile Include="Quote\ImportExport\BackgroundInpsImporter.vb" />
+    <Compile Include="Quote\ImportExport\BackgroundIQAImporter.vb" />
+    <Compile Include="Quote\ImportExport\BackGroundLiberiExporter.vb" />
+    <Compile Include="Quote\ImportExport\BackgroundLiberiImporter.vb" />
+    <Compile Include="Quote\ImportExport\ImportExportIQAManager.vb" />
+    <Compile Include="Quote\ImportExport\ImportExportLiberiManager.vb" />
+    <Compile Include="Quote\ImportExport\ImportInpsManager.vb" />
+    <Compile Include="Quote\ImportIQAScheduler.vb" />
+    <Compile Include="Quote\ImportIQPScheduler.vb" />
+    <Compile Include="Revoche\FrmImportRevoche.Designer.vb">
+      <DependentUpon>FrmImportRevoche.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Revoche\FrmImportRevoche.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Revoche\ImportRevochescheduler.vb" />
+    <Compile Include="Utenti\FrmImportUtenti.Designer.vb">
+      <DependentUpon>FrmImportUtenti.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Utenti\FrmImportUtenti.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Utenti\ImportUtentiScheduler.vb" />
+    <Compile Include="Web References\FenealgestServices\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Aziende\FrmImportAziende.resx">
+      <DependentUpon>FrmImportAziende.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Deleghe\FrmImportDeleghe.resx">
+      <DependentUpon>FrmImportDeleghe.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Liberi\FrmImportLiberi.resx">
+      <DependentUpon>FrmImportLiberi.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\licenses.licx" />
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QuoteInps\FrmQuoteInps.resx">
+      <DependentUpon>FrmQuoteInps.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QuoteInps\FrmQuoteInpsDaPath.resx">
+      <DependentUpon>FrmQuoteInpsDaPath.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QuoteInps\FrmWizardInps.resx">
+      <DependentUpon>FrmWizardInps.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QuoteInps\Notifiers\FrmNotify.resx">
+      <DependentUpon>FrmNotify.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QuoteInps\Notifiers\FrmViewTemplate.resx">
+      <DependentUpon>FrmViewTemplate.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Quote\FrmImportIQA.resx">
+      <DependentUpon>FrmImportIQA.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Revoche\FrmImportRevoche.resx">
+      <DependentUpon>FrmImportRevoche.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Utenti\FrmImportUtenti.resx">
+      <DependentUpon>FrmImportUtenti.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\DataSources\WIN.FENGEST_NAZIONALE.INTEGRATION_ENTITIES.FenealgestImportExport.InpsTraceDetails.datasource" />
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Web References\FenealgestServices\FenealgestwebServices.wsdl" />
+    <None Include="Web References\FenealgestServices\QueryResultDTO.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\FenealgestServices\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Web References\FenealgestServices\FenealgestwebServices.disco" />
+    <None Include="app.config" />
+    <None Include="Resources\logoMarchio.png" />
+    <None Include="Resources\logoMarchioImport.png" />
+    <None Include="Resources\wizard.jpg" />
+    <None Include="Resources\palla.png" />
+    <None Include="Resources\pallaOK.png" />
+    <Content Include="synchronize-icon_32_32.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\WIN.FENGEST.GUI\WIN.FENGEST.GUI.vbproj">
+      <Project>{6668DFFD-428C-4F6E-AFFF-8A7A2C7C95AD}</Project>
+      <Name>WIN.FENGEST.GUI</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WIN.FENGEST.HANDLERS\WIN.FENGEST.HANDLERS.vbproj">
+      <Project>{677821DF-57ED-4409-B2A6-384DAD0679B7}</Project>
+      <Name>WIN.FENGEST.HANDLERS</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WIN.FENGEST.INTEGRATION_SERVICES\WIN.FENGEST.INTEGRATION_SERVICES.vbproj">
+      <Project>{6A94EFF1-AC97-44E0-8EC8-3697126DFAE0}</Project>
+      <Name>WIN.FENGEST.INTEGRATION_SERVICES</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WIN.FENGEST_ARTIFACTS.DOMAIN\WIN.FENGEST_ARTIFACTS.DOMAIN.vbproj">
+      <Project>{4CDA0A25-48A3-4B0D-B71F-2EB0A82BFD15}</Project>
+      <Name>WIN.FENGEST_ARTIFACTS.DOMAIN</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WIN.FENGEST_FINANCIAL.DOMAIN\WIN.FENGEST_FINANCIAL.DOMAIN.vbproj">
+      <Project>{56a5a4a1-5e8e-4339-8400-2f4a23d62876}</Project>
+      <Name>WIN.FENGEST_FINANCIAL.DOMAIN</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WIN.FENGEST_INTERFACES.DOMAIN\WIN.FENGEST_INTERFACES.DOMAIN.vbproj">
+      <Project>{cbf388a0-2ad1-4d7c-8f12-3d3a4ff40bf6}</Project>
+      <Name>WIN.FENGEST_INTERFACES.DOMAIN</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WIN.FENGEST_NAZIONALE\ServiziFenealgestNazionale\WIN.FENGEST_NAZIONALE.INTEGRATION_ENTITIES\WIN.FENGEST_NAZIONALE.INTEGRATION_ENTITIES.csproj">
+      <Project>{fef19374-07ac-46f6-93a3-f7fb32e2428d}</Project>
+      <Name>WIN.FENGEST_NAZIONALE.INTEGRATION_ENTITIES</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WIN.FENGEST_SERVICES.DOMAIN\WIN.FENGEST_SERVICES.DOMAIN.vbproj">
+      <Project>{15fc8c5d-7817-457e-8f1f-e3958c95c070}</Project>
+      <Name>WIN.FENGEST_SERVICES.DOMAIN</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WIN.TECHNICAL.GUI.UTILITY\WIN.TECHNICAL.GUI.COMMONS.csproj">
+      <Project>{601980aa-02b2-473b-ace4-1c7d3c8b1eab}</Project>
+      <Name>WIN.TECHNICAL.GUI.COMMONS</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WIN.TECHNICAL.MIDDLEWARE\WIN.TECHNICAL.MIDDLEWARE.csproj">
+      <Project>{7817938c-e1d1-435c-b124-5f40f430a46d}</Project>
+      <Name>WIN.TECHNICAL.MIDDLEWARE</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WIN.TECHNICAL.SECURITY\WIN.TECHNICAL.SECURITY.csproj">
+      <Project>{35a34ae3-e941-47b5-acaf-43a7bbb2e0fe}</Project>
+      <Name>WIN.TECHNICAL.SECURITY</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WIN.TECHNICAL.VB.PERSISTENCE\WIN.TECHNICAL.VB.PERSISTENCE.vbproj">
+      <Project>{ED116915-FC6D-4A68-A35A-79BE08267D1C}</Project>
+      <Name>WIN.TECHNICAL.VB.PERSISTENCE</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WIN.TECHNICAL.VB.UTILS\WIN.TECHNICAL.VB.UTILS.vbproj">
+      <Project>{466A883D-893E-46FD-A2C0-D4257B63A6C0}</Project>
+      <Name>WIN.TECHNICAL.VB.UTILS</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="https://www.fenealgest.it/servizi/WebServices/FenealgestwebServices.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\FenealgestServices\</RelPath>
+      <UpdateFromURL>https://www.fenealgest.it/servizi/WebServices/FenealgestwebServices.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>MySettings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>WIN_FENGEST_IMPORT_GUI_FenealgestServices_FenealgestwebServices</CachedSettingsPropName>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

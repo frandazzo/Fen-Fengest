@@ -1,0 +1,33 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="WIN.GUI.PRINT" GeneratedClassName="Settings1">
+  <Profiles />
+  <Settings>
+    <Setting Name="ReportTitle" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Federazione Nazionale Lavoratori Edili Affini e del Legno</Value>
+    </Setting>
+    <Setting Name="ReportSubTitle" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Sindacato Provinciale</Value>
+    </Setting>
+    <Setting Name="ReportSubTittle2" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Edili - Cementieri  - Manufatti Cemento  - Calce e Gesso  - Laterizi  - Legno - Boschivi</Value>
+    </Setting>
+    <Setting Name="ReportFooterTextVia" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Via Annunziatella  n° 95</Value>
+    </Setting>
+    <Setting Name="ReportFooterTextCitta" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Matera</Value>
+    </Setting>
+    <Setting Name="ReportFooterTextTelFax" Type="System.String" Scope="User">
+      <Value Profile="(Default)">tel - fax: 0835 256450</Value>
+    </Setting>
+    <Setting Name="ReportFooterTextMail" Type="System.String" Scope="User">
+      <Value Profile="(Default)">feneal.matera@uilmt.it</Value>
+    </Setting>
+    <Setting Name="ReportFooterTextSitoWeb" Type="System.String" Scope="User">
+      <Value Profile="(Default)">www.feneal-uil.it</Value>
+    </Setting>
+    <Setting Name="ReportTitlePersonalizzato" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Feneal - uil - Matera</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
